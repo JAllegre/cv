@@ -1,5 +1,3 @@
-'use strict';
-
 const express = require('express');
 
 // Constants
@@ -10,6 +8,15 @@ const HOST = '0.0.0.0';
 const app = express();
 app.get('/', (req, res) => {
   res.send('Hello World');
+});
+
+app.use('/', (req, res) => {
+  res.send('Hello World');
+});
+
+app.use(function(err, req, res, next) {
+  console.error(err.stack);
+  res.status(500).send('Something broke!');
 });
 
 app.listen(PORT);
