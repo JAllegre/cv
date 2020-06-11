@@ -12,8 +12,10 @@ RUN npm install
 # If you are building your code for production
 # RUN npm ci --only=production
 
+RUN npm run build
+
 # Bundle app source
 COPY . .
 
 #EXPOSE 8080
-CMD [ "node", "server.js" ]
+CMD [ "npm","run","serve" ]
