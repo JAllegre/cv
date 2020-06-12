@@ -1,28 +1,49 @@
 import React from 'react';
 import {createUseStyles} from 'react-jss';
-/*
-    <div className={classes.sectionTitle}>
-      <img src={skillsIcon} alt="logo"/>
-      <FormattedMessage
-        id="str.app.skills"
-      /></div>
-* */
+import {ReactComponent as IconMinimize} from './images/minimize-24px.svg';
+import {ReactComponent as IconMaximize} from './images/web_asset-24px.svg';
+import theme from './theme';
 
 const useStyles = createUseStyles({
   sectionTitle: {
-    backgroundColor: '#008bc7',
+    backgroundColor: theme.color.bg.dark,
     display: 'flex',
-    borderRadius: '20px',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
     fontSize: '1.1em',
-    padding: '4px 10px'
+    padding: '4px 8px 4px 4px',
+    color: 'white',
+    '& svg': {
+      fill: 'white',
+      width: '20px',
+      height: '20px'
+    }
+  },
+  iconAction: {
+    justifySelf: 'flex-end',
+    cursor:'pointer',
+    opacity:'0.9',
+    '&:hover':{
+      opacity: '1'
+    }
+  },
+  text: {
+    flex: '1 1 auto',
+    textAlign: 'left',
+    paddingLeft: '5px',
+    fontWeight: 'bold'
   }
 })
 
-function SectionTitle({children, icon}) {
+function SectionTitle({children, icon, collapsed, onCollapsed}) {
   const classes = useStyles()
   return (<div className={classes.sectionTitle}>
-    <img src={icon} alt="title-icon" />
-    {children}
+    {icon}
+    <div className={classes.text}>{children}</div>
+    {collapsed ?
+      <IconMaximize className={classes.iconAction} onClick={()=> onCollapsed(false)}/>
+      : <IconMinimize className={classes.iconAction} onClick={()=> onCollapsed(true)}/>
+    }
   </div>)
 }
 

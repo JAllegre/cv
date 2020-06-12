@@ -1,6 +1,7 @@
 {
-  "str.app.skills" : "Skills",
-  "str.app.professional.experiences" : "Professional Experience",
-  "str.app.formations" : "Formations",
-  "str.app.personal.interest" : "Personal interest"
+  "str.skills" : "Skills",
+  "str.experiences" : "Professional Experience",
+  "str.formations" : "Formations",
+  "str.interests" : "Personal interest",
+  "str.head.title": "Senior Developer Full-Stack"
 }

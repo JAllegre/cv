@@ -2,13 +2,18 @@ import React from 'react';
 import {createUseStyles} from 'react-jss';
 
 const useStyles = createUseStyles({
-  sectionContent: {}
+  sectionContent: {
+    display: 'flex',
+    backgroundColor: '#FDFDFD'
+  },
+  none:{
+    display: 'none'
+  }
 })
 
-function SectionContent({children}){
+function SectionContent({collapsed,children}){
   const classes = useStyles();
-
-  return (<div className={classes.sectionContent}>
+  return (<div className={collapsed?classes.none:classes.sectionContent}>
     {children}
   </div>)
 }
