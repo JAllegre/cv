@@ -25,10 +25,10 @@ const useStyles = createUseStyles({
     textAlign: 'left'
   },
   tdYear: {
-    color:'#666666',
-    fontWeight:'bold',
+    color: '#909090',
+    fontWeight: 'bold',
+    width: '100px',
     textAlign: 'left',
-    width: '1%'
   }
 })
 
