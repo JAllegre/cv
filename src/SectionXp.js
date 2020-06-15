@@ -11,11 +11,11 @@ const useStyles = createUseStyles({
     minWidth: '350px',
     border: '0',
     backgroundColor: 'transparent',
-    padding: '10px'
+    padding: '0'
   },
   tr: {},
   td: {
-    padding: '2px 10px',
+    padding: '2px 0',
   },
   tdTest: {
     textAlign: 'center'
@@ -45,13 +45,12 @@ function SectionXp() {
   return (
     <Section>
       <SectionTitle icon={<Icon/>} collapsed={collapsed} onCollapsed={handleCollapse}>
-        <FormattedMessage id="str.experiences"/>
+        <FormattedMessage id="str.experiences.title"/>
       </SectionTitle>
       <SectionContent collapsed={collapsed}>
         <table className={classes.table}>
           <tbody>
-          <Line year='1997'>IUT...</Line>
-          <Line year='1997'>IUT...</Line>
+          <Line year='1997'>TBD...</Line>
           </tbody>
         </table>
       </SectionContent>

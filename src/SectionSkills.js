@@ -6,13 +6,13 @@ import {ReactComponent as IconRate} from './images/star_rate-black-18dp.svg';
 import Section from './Section';
 import SectionContent from './SectionContent';
 import SectionTitle from './SectionTitle';
-import theme from './theme';
 
 const useStyles = createUseStyles({
   content: {
     display: 'flex',
     width: '100%',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    flexWrap: 'wrap'
   },
 
   table: {
@@ -24,7 +24,7 @@ const useStyles = createUseStyles({
   tr: {},
   td: {
     padding: '2px 10px',
-    backgroundColor: theme.color.bg.light,
+    backgroundColor: '#f6f6f6',
   },
   tdStars: {
     textAlign: 'center'
@@ -37,8 +37,8 @@ const useStyles = createUseStyles({
 
 function SkillLine({tech, rate}) {
   const classes = useStyles()
-  let rates = (new Array(rate)).fill('', 0, 5).map((value,index)=>{
-    return(<IconRate key={String(index)}/>);
+  let rates = (new Array(rate)).fill('', 0, 5).map((value, index) => {
+    return (<IconRate key={String(index)}/>);
   })
   return (
     <tr className={classes.tr}>
@@ -50,31 +50,35 @@ function SkillLine({tech, rate}) {
 
 function SectionSkills() {
   const classes = useStyles()
-  const [collapsed,setCollapsed] = useState(false);
-  function handleCollapse(isCollapsed){
-    setCollapsed(isCollapsed) ;
+  const [collapsed, setCollapsed] = useState(false);
+
+  function handleCollapse(isCollapsed) {
+    setCollapsed(isCollapsed);
   }
+
   return (
     <Section>
       <SectionTitle icon={<Icon/>} collapsed={collapsed} onCollapsed={handleCollapse}>
-        <FormattedMessage id="str.skills"/>
+        <FormattedMessage id="str.skills.title"/>
       </SectionTitle>
       <SectionContent collapsed={collapsed}>
         <div className={classes.content}>
           <table className={classes.table}>
             <tbody>
             <SkillLine key="js" tech='Javascript/ES6' rate={5}/>
-            <SkillLine key="html" tech='HTML5/CSS3' rate={5}/>
             <SkillLine key="react" tech='React/Material-ui/Redux' rate={5}/>
+            <SkillLine key="html" tech='HTML5/CSS3' rate={5}/>
             <SkillLine key="node" tech='NodeJS/ExpressJS' rate={5}/>
             <SkillLine key="java" tech='Java' rate={2}/>
+            <SkillLine key="c" tech='C++' rate={2}/>
             </tbody>
           </table>
           <table className={classes.table}>
             <tbody>
-            <SkillLine key="c" tech='C++' rate={2}/>
+            <SkillLine key="jest" tech='Test Jest/Enzyme' rate={3}/>
+            <SkillLine key="pupet" tech='Test Puppeteer' rate={1}/>
             <SkillLine key="git" tech='Git/GitHub' rate={4}/>
-            <SkillLine key="scrum" tech='Scrum/JIRA' rate={3}/>
+            <SkillLine key="scrum" tech='Agile/Scrum/JIRA' rate={3}/>
             <SkillLine key="jen" tech='Jenkinsfile' rate={3}/>
             </tbody>
           </table>

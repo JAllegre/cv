@@ -4,7 +4,8 @@ import {createUseStyles} from 'react-jss';
 const useStyles = createUseStyles({
   sectionContent: {
     display: 'flex',
-    backgroundColor: '#FDFDFD'
+    padding: '20px'
+    // backgroundColor: '#FDFDFD'
   },
   none:{
     display: 'none'

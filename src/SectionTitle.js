@@ -8,10 +8,11 @@ const useStyles = createUseStyles({
   sectionTitle: {
     backgroundColor: theme.color.bg.dark,
     display: 'flex',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     justifyContent: 'flex-start',
     fontSize: '1.1em',
     padding: '4px 8px 4px 4px',
+    textShadow: '2px 2px 2px #2b003a',
     color: 'white',
     '& svg': {
       fill: 'white',
@@ -30,7 +31,7 @@ const useStyles = createUseStyles({
   text: {
     flex: '1 1 auto',
     textAlign: 'left',
-    paddingLeft: '5px',
+    paddingLeft: '10px',
     fontWeight: 'bold'
   }
 })

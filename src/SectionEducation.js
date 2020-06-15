@@ -8,21 +8,27 @@ import SectionTitle from './SectionTitle';
 
 const useStyles = createUseStyles({
   table: {
-    minWidth: '350px',
+    width: '100%',
     border: '0',
     backgroundColor: 'transparent',
-    padding: '10px'
+    padding: '0'
   },
-  tr: {},
+  tr: {
+    textAlign: 'left'
+  },
   td: {
-    padding: '2px 10px',
+    textAlign: 'left',
+    padding: '4px 0',
   },
-  tdTest: {
-    textAlign: 'center'
+  tdText: {
+    paddingLeft: '10px',
+    textAlign: 'left'
   },
   tdYear: {
+    color:'#666666',
+    fontWeight:'bold',
     textAlign: 'left',
-    width: '60%'
+    width: '1%'
   }
 })
 
@@ -31,7 +37,7 @@ function Line({year, children}) {
   return (
     <tr className={classes.tr}>
       <td className={classes.td + ' ' + classes.tdYear}>{year}</td>
-      <td className={classes.td + ' ' + classes.tdTest}>{children}</td>
+      <td className={classes.td + ' ' + classes.tdText}>{children}</td>
     </tr>
   )
 }
@@ -45,13 +51,17 @@ function SectionEducation() {
   return (
     <Section>
       <SectionTitle icon={<Icon/>} collapsed={collapsed} onCollapsed={handleCollapse}>
-        <FormattedMessage id="str.formations"/>
+        <FormattedMessage id="str.formations.title"/>
       </SectionTitle>
       <SectionContent collapsed={collapsed}>
         <table className={classes.table}>
           <tbody>
-          <Line year='1997'>IUT...</Line>
-          <Line year='1997'>IUT...</Line>
+          <Line year='2006'>
+            <FormattedMessage id="str.formations.cnam"/>
+          </Line>
+          <Line year='2000'>
+            <FormattedMessage id="str.formations.dut"/>
+          </Line>
           </tbody>
         </table>
       </SectionContent>

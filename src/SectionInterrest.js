@@ -6,7 +6,11 @@ import Section from './Section';
 import SectionContent from './SectionContent';
 import SectionTitle from './SectionTitle';
 
-const useStyles = createUseStyles({})
+const useStyles = createUseStyles({
+  text: {
+
+  }
+})
 
 
 function SectionInterests() {
@@ -20,10 +24,13 @@ function SectionInterests() {
   return (
     <Section>
       <SectionTitle icon={<Icon/>} collapsed={collapsed} onCollapsed={handleCollapse}>
-        <FormattedMessage id="str.interests"/>
+        <FormattedMessage id="str.interests.title"/>
       </SectionTitle>
       <SectionContent collapsed={collapsed}>
-        Bla bla bla
+        <div className={classes.text}>
+          <FormattedMessage id="str.interests.list"/>
+        </div>
+
       </SectionContent>
     </Section>)
 }

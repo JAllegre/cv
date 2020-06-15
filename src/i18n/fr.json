@@ -1,7 +1,11 @@
 {
-  "str.skills" : "Compétences",
-  "str.experiences" : "Experiences professionelles",
-  "str.formations" : "Formations",
-  "str.interests" : "Centre d'intérêt",
-  "str.head.title": "Developeur Senior Full-Stack"
+  "str.skills.title": "Compétences",
+  "str.experiences.title": "Experiences professionnelles",
+  "str.formations.title": "Formations",
+  "str.interests.title": "Centre d'intérêt",
+  "str.head.role": "Développeur Senior Full-Stack",
+  "str.change.language.tooltip": "Changer de langue",
+  "str.formations.cnam": "Diplôme d'ingénieur Informatique (réseaux et multimédia) - CNAM Montpellier",
+  "str.formations.dut": "DUT informatique (de gestion) - IUT Montpellier",
+  "str.interests.list": "Cuisine, Séries télé, Randonnées, Vélo tourisme"
 }
