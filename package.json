@@ -11,6 +11,10 @@
     "react-scripts": "3.4.1",
     "serve": "^11.3.2"
   },
+  "devDependencies": {
+    "react-intl": "^4.6.9",
+    "react-jss": "^10.3.0"
+  },
   "scripts": {
     "start": "serve -s build",
     "dev": "react-scripts start",

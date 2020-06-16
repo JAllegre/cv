@@ -1,11 +1,30 @@
 {
-  "str.skills.title": "Compétences",
-  "str.experiences.title": "Experiences professionnelles",
-  "str.formations.title": "Formations",
-  "str.interests.title": "Centre d'intérêt",
-  "str.head.role": "Développeur Senior Full-Stack (JS)",
   "str.change.language.tooltip": "Changer de langue",
-  "str.formations.cnam": "Diplôme d'ingénieur Informatique (réseaux et multimédia) - CNAM Montpellier",
-  "str.formations.dut": "DUT informatique (de gestion) - IUT Montpellier",
-  "str.interests.list": "Cuisine, Séries télé, Randonnées, Vélo tourisme"
+  "str.head.role": "Développeur Senior Full-Stack (JS)",
+  "str.skills.title": "Compétences",
+  "str.experiences.title": "Expériences professionnelles",
+  "str.formations.title": "Formations",
+  "str.interests.title": "Centres d'intérêt",
+
+  "str.formations.cnam": "Diplôme ingénieur informatique (réseaux et multimédia) - CNAM Montpellier",
+  "str.formations.du": "DU informatique - IUT Montpellier",
+  "str.formations.dut": "DUT informatique - IUT Montpellier",
+
+  "str.skills.english.technical":"Anglais Technique",
+  "str.skills.english.fluent" : "Anglais Courant",
+
+  "str.interests.list": "Cuisine, Séries télé, Randonnées, Vélo tourisme",
+
+  "str.xp1.role" : "Développeur Back-end/Front-end",
+  "str.xp1.location" : "Genesys Conferencing (Montpellier)",
+  "str.xp1.text" : "Implementation and maintenance of an applicative web proxy, based on an apache module (C/C++) to connect web clients to an internal conference (audio) server. Take over the management (one developper), the implementation and improve stability of a C++ based conference data server. Implementation of the web client of the conferencing service",
+
+  "str.xp2.role" : "Ingénieur développement Front-End",
+  "str.xp2.location" : "Intercall  (Montpellier)",
+  "str.xp2.text" : "Début de la conception et de l'implémentation du nouveau client web de la solution de téléconférence de l'entreprise en\n            React/Redux/Material-ui, tou en essayant de récupéré les composant métiers existant\n\n            Implémentation d'un application QML/Javascript embarqué dans un apareil de téléconférence (Dolby Conference Phone) en utilisant et en\n            optimisant fortement les composants métiers de l'application web existante\n\n            Implémentation de divers composants graphique et métiers de l'application de conférence web de l'entreprise basé sur le framework js dojo\n\n            Ces divers projets ce sont fait sein d'une équipe de 5 à 8 personnes en France mais aussi en coordination avec d'autres équipes au US,au\n            Canada, en chine et en Inde.\n            Depuis le début, utilisation de méthode agiles (scrum)",
+
+  "str.xp3.role" : "Leader technique / Ingénieur developpement",
+  "str.xp3.location" : "Intrado/West (Montpellier)",
+  "str.xp3.text" : "            Conception et implémentation du front-end et du back-end d'un nouveau portail web ayant pour but d'exposer aux clients leurs données\n            d'utilisation et de consommation provenant des bases de données de l'entreprise et mise en forme par Tableau Server.\n            Ce portail inclus l'authentification et la gestion des utilisateurs , la mise à disposition des visualisations Tableau\n\n            Design and Implement, from the beginning, the front-end and back-end of a new web portal allowing to expose customer usage data\n            coming from big data teams (served by Tableau Server). This include the login authentication (SSO and legacy email invite), database\n            connections(Oracle, Postgres) and export ability (csv),\n\n            Implement the CI/CD pipeline to bring the apps from source to production (Github/Jenkins/Artifactory/PCF)"
+
 }

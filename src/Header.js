@@ -9,7 +9,7 @@ import theme from './theme';
 
 const useStyles = createUseStyles({
   hideOnSmall: {
-    '@media (max-width: 800px)': {
+    '@media (max-width: 600px)': {
       display: 'none'
     },
   },
@@ -19,7 +19,7 @@ const useStyles = createUseStyles({
     justifyContent: 'space-between',
     alignItems: 'center',
     'flexWrap': 'wrap',
-    '@media (max-width: 800px)': {
+    '@media (max-width: 1000px)': {
       flexDirection: 'column',
       justifyContent: 'center',
     },
@@ -54,12 +54,18 @@ const useStyles = createUseStyles({
     // backgroundColor: theme.color.bg.light,
     color: 'white',
     fontSize: '1.4em',
-    //flex: '1 1 auto',
+    flex: '1 1 auto',
+    paddingRight: '25%',
+    textAlign: 'center',
     textTransform: 'uppercase',
     fontWeight: 'bold',
     textShadow: '4px 4px 2px #2b003a',
-    '@media (max-width: 800px)': {
+    '@media (max-width: 1300px)': {
+      paddingRight: '0',
+    },
+    '@media (max-width: 600px)': {
       fontSize: '1.1em',
+      paddingTop: '20px',
     },
   },
   linkedInIcon: {

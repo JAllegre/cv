@@ -14,13 +14,15 @@ const messages = {
   'en': messagesEn
 };
 
+let initLanguage = localStorage.getItem('jacv');
+initLanguage = initLanguage || navigator.language.split(/[-_]/)[0];
 
 function App() {
 
-  const [language, setLanguage] = useState(navigator.language.split(/[-_]/)[0])
+  const [language, setLanguage] = useState(initLanguage)
 
   function changeLanguage(newLanguage) {
-    console.info('ju>>>>>App(32)>changeLanguage>', newLanguage);
+    localStorage.setItem('jacv', newLanguage);
     setLanguage(newLanguage);
   }
 
@@ -30,7 +32,7 @@ function App() {
 
       <div className="App">
         <Header language={language} onChangeLanguage={changeLanguage}/>
-        <Main />
+        <Main/>
       </div>
     </IntlProvider>
   );

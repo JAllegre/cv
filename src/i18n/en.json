@@ -1,11 +1,17 @@
 {
-  "str.skills.title" : "Skills",
-  "str.experiences.title" : "Professional Experience",
-  "str.formations.title" : "Formations",
-  "str.interests.title" : "Personal interest",
-  "str.head.role": "Senior Developer Full-Stack (JS)",
   "str.change.language.tooltip": "Change language",
-  "str.formations.cnam" : "Computer engineering diploma (networks and multimedia) - CNAM of Montpellier",
-  "str.formations.dut" : "DUT in computer science - IUT of Montpellier",
+  "str.head.role": "Senior Developer Full-Stack (JS)",
+  "str.skills.title" : "Skills",
+  "str.experiences.title" : "Work Experience",
+  "str.formations.title" : "Education",
+  "str.interests.title" : "Personal interests",
+
+  "str.formations.cnam" : "Computer engineering diploma (network and multimedia) - CNAM Montpellier",
+  "str.formations.du": "DU informatique - IUT Montpellier",
+  "str.formations.dut" : "DUT in computer science - IUT Montpellier",
+
+  "str.skills.english.technical":"Technical english",
+  "str.skills.english.fluent" : "Fluent english",
+
   "str.interests.list": "Cooking, TV shows, Hiking, bicycle tourism"
 }

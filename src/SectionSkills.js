@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {FormattedMessage} from 'react-intl';
+import {FormattedMessage, injectIntl} from 'react-intl';
 import {createUseStyles} from 'react-jss';
 import {ReactComponent as Icon} from './images/settings-black-18dp.svg';
 import Section from './Section';
@@ -76,7 +76,7 @@ function SkillLine({tech, rate}) {
   )
 }
 
-function SectionSkills() {
+function SectionSkills({intl}) {
   const classes = useStyles()
   const [collapsed, setCollapsed] = useState(false);
 
@@ -84,6 +84,8 @@ function SectionSkills() {
     setCollapsed(isCollapsed);
   }
 
+  const englishTechnical = intl.formatMessage({id: 'str.skills.english.technical'});
+  const englishFluent = intl.formatMessage({id: 'str.skills.english.fluent'});
   return (
     <Section>
       <SectionTitle icon={<Icon/>} collapsed={collapsed} onCollapsed={handleCollapse}>
@@ -112,8 +114,8 @@ function SectionSkills() {
           </table>
           <table className={classes.table}>
             <tbody>
-            <SkillLine key="ten" tech='Technical English' rate={4}/>
-            <SkillLine key="cen" tech='Current English' rate={3}/>
+            <SkillLine key="ten" tech={englishTechnical} rate={5}/>
+            <SkillLine key="cen" tech={englishFluent} rate={3}/>
             </tbody>
           </table>
         </div>
@@ -121,4 +123,4 @@ function SectionSkills() {
     </Section>)
 }
 
-export default SectionSkills;
+export default injectIntl(SectionSkills);

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {FormattedMessage} from 'react-intl';
+import {FormattedMessage, injectIntl} from 'react-intl';
 import {createUseStyles} from 'react-jss';
 import {ReactComponent as Icon} from './images/handyman-black-18dp.svg';
 import Section from './Section';
@@ -18,24 +18,37 @@ const useStyles = createUseStyles({
     flex: '0 0 100px',
     textAlign: 'left',
     whiteSpace: 'nowrap',
-    color: '#909090',
+    color: '#878787',
     fontWeight: 'bold'
   },
   lineContent: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'flex-start',
-    padding: '0 0 0 20px'
+    padding: '0 0 0 20px',
+    '& ul':{
+      paddingInlineStart : '30px'
+    }
   },
   lineRole: {
+    marginBottom: '10px',
     fontWeight: 'bold'
   },
-  lineLocation:{
-    color: 'grey'
+  lineLocation: {
+    marginBottom: '10px',
+    color: '#878787'
+  },
+  text: {
+    marginBottom: '10px',
+    textAlign: 'left'
   }
 })
 
-function Line({period, role, location, children}) {
+function formatXpText(str = '') {
+  return {__html: '<ul><li> ' + str.replace(/\. /g, '</li><li>') + '</li></ul>'};
+}
+
+function Line({period, role, location, text}) {
   const classes = useStyles()
   return (
     <div className={classes.line}>
@@ -49,25 +62,31 @@ function Line({period, role, location, children}) {
         <div className={classes.lineLocation}>
           {location}
         </div>
-        <div>
-          {children}
-        </div>
+        <div className={classes.text} dangerouslySetInnerHTML={formatXpText(text)}/>
       </div>
     </div>
-    // <tr className={classes.tr}>
-    //   <td className={classes.td + ' ' + classes.tdYear}>{year}</td>
-    //   <td className={classes.td + ' ' + classes.tdText}>{children}</td>
-    // </tr>
   )
 }
 
-function SectionXp() {
+function SectionXp({intl}) {
   const classes = useStyles()
   const [collapsed, setCollapsed] = useState(false);
 
   function handleCollapse(isCollapsed) {
     setCollapsed(isCollapsed);
   }
+
+  const xp1Role = intl.formatMessage({id: 'str.xp1.role'});
+  const xp1Location = intl.formatMessage({id: 'str.xp1.location'});
+  const xp1Text = intl.formatMessage({id: 'str.xp1.text'});
+
+  const xp2Role = intl.formatMessage({id: 'str.xp2.role'});
+  const xp2Location = intl.formatMessage({id: 'str.xp2.location'});
+  const xp2Text = intl.formatMessage({id: 'str.xp2.text'});
+
+  const xp3Role = intl.formatMessage({id: 'str.xp3.role'});
+  const xp3Location = intl.formatMessage({id: 'str.xp3.location'});
+  const xp3Text = intl.formatMessage({id: 'str.xp3.text'});
 
   return (
     <Section>
@@ -76,49 +95,12 @@ function SectionXp() {
       </SectionTitle>
       <SectionContent collapsed={collapsed}>
         <div className={classes.content}>
-          <Line period='2019 - 2020' role='Leader technique / Ingénieur developpement' location="Intrado/West (Montpellier)">
-            <div>Conception et implémentation du front-end et du back-end d'un nouveau portail web ayant pour but d'exposer aux clients leurs données
-              d'utilisation et de consommation provenant des bases de données de l'entreprise et mise en forme par Tableau Server.
-              Ce portail inclus l'authentification et la gestion des utilisateurs , la mise à disposition des visualisations Tableau
-
-              Design and Implement, from the beginning, the front-end and back-end of a new web portal allowing to expose customer usage data
-              coming from big data teams (served by Tableau Server). This include the login authentication (SSO and legacy email invite), database
-              connections(Oracle, Postgres) and export ability (csv),
-
-              Implement the CI/CD pipeline to bring the apps from source to production (Github/Jenkins/Artifactory/PCF)
-            </div>
-          </Line>
-          <Line period='2009 - 2019' role='Ingénieur développement Front-End' location="Intercall  (Montpellier)">
-
-            Début de la conception et de l'implémentation du nouveau client web de la solution de téléconférence de l'entreprise en
-            React/Redux/Material-ui, tou en essayant de récupéré les composant métiers existant
-
-            Implémentation d'un application QML/Javascript embarqué dans un apareil de téléconférence (Dolby Conference Phone) en utilisant et en
-            optimisant fortement les composants métiers de l'application web existante
-
-            Implémentation de divers composants graphique et métiers de l'application de conférence web de l'entreprise basé sur le framework js dojo
-
-            Ces divers projets ce sont fait sein d'une équipe de 5 à 8 personnes en France mais aussi en coordination avec d'autres équipes au US,au
-            Canada, en chine et en Inde.
-            Depuis le début, utilisation de méthode agiles (scrum)
-          </Line>
-          <Line period='2009 - 2019' role='Ingénieur développement Front-End' location="Intercall  (Montpellier)">
-
-            Début de la conception et de l'implémentation du nouveau client web de la solution de téléconférence de l'entreprise en
-            React/Redux/Material-ui, tou en essayant de récupéré les composant métiers existant
-
-            Implémentation d'un application QML/Javascript embarqué dans un apareil de téléconférence (Dolby Conference Phone) en utilisant et en
-            optimisant fortement les composants métiers de l'application web existante
-
-            Implémentation de divers composants graphique et métiers de l'application de conférence web de l'entreprise basé sur le framework js dojo
-
-            Ces divers projets ce sont fait sein d'une équipe de 5 à 8 personnes en France mais aussi en coordination avec d'autres équipes au US,au
-            Canada, en chine et en Inde.
-            Depuis le début, utilisation de méthode agiles (scrum)
-          </Line>
+          <Line period='2019 - 2020' role={xp3Role} location={xp3Location} text={xp3Text} />
+          <Line period='2009 - 2019' role={xp2Role} location={xp2Location} text={xp2Text} />
+          <Line period='2000 - 2008' role={xp1Role} location={xp1Location} text={xp1Text} />
         </div>
       </SectionContent>
     </Section>)
 }
 
-export default SectionXp;
+export default injectIntl(SectionXp);

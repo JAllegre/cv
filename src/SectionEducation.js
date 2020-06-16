@@ -59,6 +59,9 @@ function SectionEducation() {
           <Line year='2006'>
             <FormattedMessage id="str.formations.cnam"/>
           </Line>
+          <Line year='2001'>
+            <FormattedMessage id="str.formations.du"/>
+          </Line>
           <Line year='2000'>
             <FormattedMessage id="str.formations.dut"/>
           </Line>
