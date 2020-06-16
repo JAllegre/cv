@@ -23,19 +23,21 @@ const useStyles = createUseStyles({
       flexDirection: 'column',
       justifyContent: 'center',
     },
+    padding: '20px 40px'
   },
   identity: {
     display: 'flex',
-    flex: '1 1 33%'
+    //flex: '0 0 350px'
   },
   myFace: {
-    margin: '20px 20px 20px 40px',
+    // margin: '20px 20px 20px 40px',
     borderRadius: '50%',
     width: '100px',
     boxShadow: '0 0 10px #555555'
   },
 
   locate: {
+    marginLeft: '20px',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -52,7 +54,7 @@ const useStyles = createUseStyles({
     // backgroundColor: theme.color.bg.light,
     color: 'white',
     fontSize: '1.4em',
-    flex: '1 1 33%',
+    //flex: '1 1 auto',
     textTransform: 'uppercase',
     fontWeight: 'bold',
     textShadow: '4px 4px 2px #2b003a',
@@ -74,7 +76,7 @@ const useStyles = createUseStyles({
     fontSize: '0.9em'
   },
   empty: {
-    flex: '1 1 33%'
+    //flex: '0 0 350px'
   },
   lang: {
     cursor: 'pointer',
@@ -116,7 +118,7 @@ function Header({language, onChangeLanguage, intl}) {
         <FormattedMessage id="str.head.role"/>
         <span className={classes.hideOnSmall}> &#125;&#125;</span>
       </div>
-      <div className={classes.empty}>&nbsp;</div>
+      {/*<div className={classes.empty}>&nbsp;</div>*/}
       <div className={classes.lang} onClick={handleLangClick} title={langTooltip}>
         <img className={classes.flag} src={language === 'fr' ? flagEn : flagFr} alt="flag"/>
       </div>

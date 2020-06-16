@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import {FormattedMessage} from 'react-intl';
 import {createUseStyles} from 'react-jss';
 import {ReactComponent as Icon} from './images/settings-black-18dp.svg';
-import {ReactComponent as IconRate} from './images/star_rate-black-18dp.svg';
 import Section from './Section';
 import SectionContent from './SectionContent';
 import SectionTitle from './SectionTitle';
@@ -32,18 +31,47 @@ const useStyles = createUseStyles({
   tdTech: {
     textAlign: 'left',
     width: '60%'
-  }
+  },
+  rater: {
+    display: 'flex',
+    width: '100%',
+    height: '10px',
+  },
+  rate: {
+    //borderRight: '1px solid grey',
+    borderTop: '1px solid grey',
+    borderBottom: '1px solid grey',
+    borderLeft: '1px solid grey',
+    '&:last-child':{
+      borderRight: '1px solid grey',
+    },
+    flex: '1 0 auto',
+    height: '8px'
+  },
+  rateOn: {
+   backgroundColor: '#91ef8c'
+  },
+  rateOff: {}
 })
 
 function SkillLine({tech, rate}) {
   const classes = useStyles()
-  let rates = (new Array(rate)).fill('', 0, 5).map((value, index) => {
-    return (<IconRate key={String(index)}/>);
-  })
+  const rates = [];
+  for (let cpt = 0; cpt < 5; cpt++) {
+
+    rates.push(<div className={classes.rate + ' ' + (cpt < rate ? classes.rateOn : classes.rateOff)}/>)
+
+  }
+  //let rates = (new Array(rate)).fill('', 0, 5).map((value, index) => {
+
+  //return (<IconRate key={String(index)}/>);
+  //})
   return (
     <tr className={classes.tr}>
       <td className={classes.td + ' ' + classes.tdTech}>{tech}</td>
-      <td className={classes.td + ' ' + classes.tdStars}>{rates}</td>
+      <td className={classes.td + ' ' + classes.tdStars}>
+        <div className={classes.rater}>{rates}</div>
+      </td>
     </tr>
   )
 }
