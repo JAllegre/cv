@@ -23,7 +23,7 @@ const useStyles = createUseStyles({
       flexDirection: 'column',
       justifyContent: 'center',
     },
-    padding: '20px 40px'
+    padding: '15px 40px'
   },
   identity: {
     display: 'flex',
@@ -32,7 +32,7 @@ const useStyles = createUseStyles({
   myFace: {
     // margin: '20px 20px 20px 40px',
     borderRadius: '50%',
-    width: '100px',
+    width: '120px',
     boxShadow: '0 0 10px #555555'
   },
 

@@ -5,6 +5,7 @@ import {ReactComponent as Icon} from './images/settings-black-18dp.svg';
 import Section from './Section';
 import SectionContent from './SectionContent';
 import SectionTitle from './SectionTitle';
+import theme from './theme';
 
 const useStyles = createUseStyles({
   content: {
@@ -49,7 +50,7 @@ const useStyles = createUseStyles({
     height: '8px'
   },
   rateOn: {
-   backgroundColor: '#91ef8c'
+   backgroundColor: theme.color.bg.dark
   },
   rateOff: {}
 })
@@ -101,15 +102,18 @@ function SectionSkills({intl}) {
             <SkillLine key="node" tech='NodeJS/ExpressJS' rate={5}/>
             <SkillLine key="java" tech='Java' rate={2}/>
             <SkillLine key="c" tech='C++' rate={2}/>
+            <SkillLine key="jest" tech='Test Jest/Enzyme' rate={3}/>
+            <SkillLine key="pupet" tech='Test Puppeteer' rate={1}/>
             </tbody>
           </table>
           <table className={classes.table}>
             <tbody>
-            <SkillLine key="jest" tech='Test Jest/Enzyme' rate={3}/>
-            <SkillLine key="pupet" tech='Test Puppeteer' rate={1}/>
+
             <SkillLine key="git" tech='Git/GitHub' rate={4}/>
             <SkillLine key="scrum" tech='Agile/Scrum/JIRA' rate={3}/>
             <SkillLine key="jen" tech='Jenkinsfile' rate={3}/>
+            <SkillLine key="jen" tech='Docker' rate={2}/>
+            <SkillLine key="jen" tech='Pivotal Cloud Foundry' rate={3}/>
             </tbody>
           </table>
           <table className={classes.table}>

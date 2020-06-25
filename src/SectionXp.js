@@ -26,8 +26,8 @@ const useStyles = createUseStyles({
     flexDirection: 'column',
     alignItems: 'flex-start',
     padding: '0 0 0 20px',
-    '& ul':{
-      paddingInlineStart : '30px'
+    '& ul': {
+      paddingInlineStart: '30px'
     }
   },
   lineRole: {
@@ -41,21 +41,21 @@ const useStyles = createUseStyles({
   text: {
     marginBottom: '10px',
     textAlign: 'left',
-    '& li':{
+    '& li': {
       paddingBottom: '10px'
     }
   },
-  notes:{
+  notes: {
     textAlign: 'left',
     margin: '0 0 30px 0'
   }
 })
 
 function formatXpText(str = '') {
-  return {__html: '<ul><li> ' + str.replace(/\. /g, '</li><li>') + '</li></ul>'};
+  return {__html: '<ul><li> ' + str.replace(/\.\. /g, '</li><li>') + '</li></ul>'};
 }
 
-function Line({period, role, location, text,notes}) {
+function Line({period, role, location, text, notes}) {
   const classes = useStyles()
   return (
     <div className={classes.line}>
@@ -70,7 +70,7 @@ function Line({period, role, location, text,notes}) {
           {location}
         </div>
         <div className={classes.text} dangerouslySetInnerHTML={formatXpText(text)}/>
-        {notes && <div className={classes.notes}> {notes}</div> }
+        {notes && <div className={classes.notes}> {notes}</div>}
       </div>
     </div>
   )
@@ -97,6 +97,7 @@ function SectionXp({intl}) {
   const xp3Role = intl.formatMessage({id: 'str.xp3.role'});
   const xp3Location = intl.formatMessage({id: 'str.xp3.location'});
   const xp3Text = intl.formatMessage({id: 'str.xp3.text'});
+  const xp3Notes = intl.formatMessage({id: 'str.xp3.notes'});
 
   return (
     <Section>
@@ -105,9 +106,9 @@ function SectionXp({intl}) {
       </SectionTitle>
       <SectionContent collapsed={collapsed}>
         <div className={classes.content}>
-          <Line period='2019 - 2020' role={xp3Role} location={xp3Location} text={xp3Text}  />
+          <Line period='2019 - 2020' role={xp3Role} location={xp3Location} text={xp3Text} notes={xp3Notes}/>
           <Line period='2010 - 2019' role={xp2Role} location={xp2Location} text={xp2Text} notes={xp2Notes}/>
-          <Line period='2000 - 2009' role={xp1Role} location={xp1Location} text={xp1Text} />
+          <Line period='2000 - 2009' role={xp1Role} location={xp1Location} text={xp1Text}/>
           <div>
           </div>
         </div>

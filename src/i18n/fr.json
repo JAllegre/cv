@@ -1,6 +1,6 @@
 {
   "str.change.language.tooltip": "Changer de langue",
-  "str.head.role": "Développeur Senior Full-Stack (JS)",
+  "str.head.role": "Développeur Senior Full-Stack JS",
   "str.skills.title": "Compétences",
   "str.experiences.title": "Expériences professionnelles",
   "str.formations.title": "Formations",
@@ -13,19 +13,19 @@
   "str.skills.english.technical":"Anglais Technique",
   "str.skills.english.fluent" : "Anglais Courant",
 
-  "str.interests.list": "Cuisine, Randonnées, Vélo tourisme, Séries télé",
+  "str.interests.list": "Cuisine, Randonnées familiale, Cyclisme familiale, Séries télé",
 
   "str.xp1.role" : "Développeur Back-end/Front-end",
   "str.xp1.location" : "Genesys Conferencing (Montpellier)",
-  "str.xp1.text" : "Conception et implémentation d’un module apache en C++ permettant de connecter une application web à des serveurs internes de conférence audio. Reprise de la gestion et maintenance d’un projet existant de deux personnes, consistant à améliorer la stabilité d’un serveur de data conférence en VC++. Implémentation de composants du premier client sur navigateur web du service de conférence web de l’entreprise, remplaçant l’ancienne application native. Pour des besoins internes mais aussi en tant que projet du mémoire d’ingénieur CNAM, conception et développement d’une application VC++ permettant de piloter des scripts en VOS afin de tester des fonctionnalités audios",
+  "str.xp1.text" : "Conception et implémentation d’un module apache en C++ permettant de connecter une application web à des serveurs internes de conférence audio.. Reprise de la gestion et maintenance d’un projet existant de deux personnes, consistant à améliorer la stabilité d’un serveur de data conférence en VC++.. Implémentation de composants du premier client sur navigateur web du service de conférence web de l’entreprise, remplaçant l’ancienne application native.. Pour des besoins internes mais aussi en tant que projet du mémoire d’ingénieur CNAM, conception et développement d’une application VC++ permettant de piloter des scripts en VOS afin de tester des fonctionnalités audios",
 
   "str.xp2.role" : "Ingénieur développement Front-End",
   "str.xp2.location" : "Intercall  (Montpellier)",
-  "str.xp2.text" : "Début de la conception et de l'implémentation du nouveau client web de la solution de téléconférence de l'entreprise en React et Material-ui, tout en réutilisant et adaptant les composants métiers existants. Implémentation d’une application en QML/Javascript, embarquée dans un téléphone conférence (Dolby Conference Phone) en réutilisant et en optimisant fortement les composants métiers de l'application web existante. Développement de nombreux composants graphiques et métiers de l'application de conférence web de l'entreprise basé sur le framework dojo",
+  "str.xp2.text" : "Début de la conception et de l'implémentation du nouveau client web de la solution de téléconférence de l'entreprise en React et Material-ui, tout en réutilisant et adaptant les composants métiers(js) existants.. Implémentation d’une application en QML/Javascript, embarquée dans un téléphone de conférence (Dolby Conference Phone) en réutilisant et en optimisant fortement les composants métiers de l'application web existante.. Développement de nombreux composants graphiques et métiers de l'application de conférence web de l'entreprise basé sur le framework dojo",
   "str.xp2.notes" :"Ces divers projets ce sont fait au sein d'une équipe de 5 à 8 personnes en France mais aussi en coordination avec d'autres équipes au US, au Canada, en Chine et en Inde, en utilisant des méthodologies agiles depuis le début",
 
   "str.xp3.role" : "Développeur sénior / Leader technique",
   "str.xp3.location" : "Intrado/West (Montpellier)",
-  "str.xp3.text" : "Conception et implémentation du front-end et du back-end d’un nouveau portail web ayant pour but d'exposer aux clients leurs données d'utilisation et de consommation provenant des bases de données de l'entreprise et mise en forme par des visualisations générées par Tableau Server. Ce portail inclus l'authentification et la gestion des utilisateurs, l’affichage des visualisations, l’exportation des données en fichier. Mise en place d’un pipeline CI/CD avec Jenkinsfile, Artifactory et PCF pour le déploiement automatique de toutes les applications du portail"
-
+  "str.xp3.text" : "Conception et développement du front-end (React) et du back-end (nodejs) d’un nouveau portail web ayant pour but d'exposer aux clients leurs données d'utilisation et de consommation provenant de bases de données de l'entreprise. Ce portail inclus notamment l'authentification des utilisateurs, leur administration (création, hiérarchie, comptes…), l’affichage des données grâce à Tableau Server, un système de notifications et l’exportation des données bruts en fichier CSV.. Mise en place d’un pipeline CI/CD avec GitHub, Jenkinsfile, Artifactory et PCF pour le déploiement automatique de toutes les applications du portail (mono-repo)",
+  "str.xp3.notes" :"Ce projet a été réalisé au sein d'un équipe de 12 personnes dont 3 en France en utilisant les méthodes agiles (SAFE, Scrum)"
 }
