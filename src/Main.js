@@ -20,8 +20,8 @@ function Main(){
   return (
     <main className={classes.main}>
       <SectionSkills/>
-      <SectionEducation/>
       <SectionXp/>
+      <SectionEducation/>
       <SectionInterests/>
     </main>
   )
