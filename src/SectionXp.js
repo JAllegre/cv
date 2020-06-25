@@ -13,13 +13,20 @@ const useStyles = createUseStyles({
   },
   line: {
     display: 'flex',
+    '@media (max-width: 600px)': {
+      flexDirection: 'column',
+    },
   },
   linePeriod: {
     flex: '0 0 100px',
     textAlign: 'left',
     whiteSpace: 'nowrap',
     color: '#878787',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    '@media (max-width: 600px)': {
+      flex: '0 0 auto',
+      marginBottom: '10px'
+    }
   },
   lineContent: {
     display: 'flex',
@@ -28,6 +35,9 @@ const useStyles = createUseStyles({
     padding: '0 0 0 20px',
     '& ul': {
       paddingInlineStart: '30px'
+    },
+    '@media (max-width: 600px)': {
+      padding: '0 0 0 0',
     }
   },
   lineRole: {
