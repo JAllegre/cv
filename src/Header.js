@@ -23,7 +23,7 @@ const useStyles = createUseStyles({
       flexDirection: 'column',
       justifyContent: 'center',
     },
-    padding: '15px 40px'
+    padding: '15px 30px'
   },
   identity: {
     display: 'flex',
@@ -63,10 +63,10 @@ const useStyles = createUseStyles({
     '@media (max-width: 1300px)': {
       paddingRight: '0',
     },
-    '@media (max-width: 600px)': {
+    '@media (max-width: 1000px)': {
       fontSize: '1.1em',
       paddingTop: '20px',
-    },
+    }
   },
   linkedInIcon: {
     backgroundColor: 'white',
@@ -79,7 +79,10 @@ const useStyles = createUseStyles({
   linkedInLink: {
     color: '#00b8ff',
     textDecoration: 'none',
-    fontSize: '0.9em'
+    fontSize: '0.9em',
+    '@media print': {
+      display: 'none'
+    }
   },
   empty: {
     //flex: '0 0 350px'
@@ -92,6 +95,9 @@ const useStyles = createUseStyles({
     opacity: '0.9',
     '&:hover': {
       opacity: '1',
+    },
+    '@media print': {
+      display: 'none'
     }
   },
   flag: {

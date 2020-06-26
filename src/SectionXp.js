@@ -123,7 +123,9 @@ function SectionXp({intl}) {
           </div>
         </div>
       </SectionContent>
-    </Section>)
+    </Section>
+  )
+
 }
 
 export default injectIntl(SectionXp);
