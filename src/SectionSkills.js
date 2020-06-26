@@ -16,9 +16,14 @@ const useStyles = createUseStyles({
   },
 
   table: {
-    minWidth: '350px',
+    width: '30%',
+    padding: '10px',
+    minWidth: '300px',
     border: '0',
-    backgroundColor: 'transparent'
+    backgroundColor: 'transparent',
+    // '@media (max-width: 600px)': {
+    //   width: '200px'
+    // },
   },
   tr: {},
   td: {
@@ -42,14 +47,14 @@ const useStyles = createUseStyles({
     borderTop: '1px solid grey',
     borderBottom: '1px solid grey',
     borderLeft: '1px solid grey',
-    '&:last-child':{
+    '&:last-child': {
       borderRight: '1px solid grey',
     },
     flex: '1 0 auto',
     height: '8px'
   },
   rateOn: {
-   backgroundColor: theme.color.bg.dark
+    backgroundColor: theme.color.bg.dark
   },
   rateOff: {}
 })
@@ -102,7 +107,7 @@ function SectionSkills({intl}) {
             <SkillLine key="dojo" tech='Dojo' rate={4}/>
             <SkillLine key="java" tech='Java' rate={2}/>
             <SkillLine key="c" tech='C++' rate={2}/>
-              </tbody>
+            </tbody>
           </table>
           <table className={classes.table}>
             <tbody>

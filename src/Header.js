@@ -9,9 +9,9 @@ import theme from './theme';
 
 const useStyles = createUseStyles({
   hideOnSmall: {
-    '@media (max-width: 600px)': {
-      display: 'none'
-    },
+    // '@media (max-width: 600px)': {
+    //    display: 'none'
+    // },
   },
   header: {
     backgroundColor: theme.color.bg.dark,
@@ -19,11 +19,7 @@ const useStyles = createUseStyles({
     justifyContent: 'space-between',
     alignItems: 'center',
     'flexWrap': 'wrap',
-    '@media (max-width: 1000px)': {
-      flexDirection: 'column',
-      justifyContent: 'center',
-    },
-    padding: '15px 30px'
+    padding: '20px 20px'
   },
   identity: {
     display: 'flex',
@@ -37,7 +33,7 @@ const useStyles = createUseStyles({
   },
 
   locate: {
-    marginLeft: '20px',
+    marginLeft: '15px',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
