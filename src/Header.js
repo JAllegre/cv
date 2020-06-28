@@ -55,7 +55,7 @@ const useStyles = createUseStyles({
     textAlign: 'center',
     textTransform: 'uppercase',
     fontWeight: 'bold',
-    textShadow: '4px 4px 2px #2b003a',
+    textShadow: '3px 3px 2px #222222',
     '@media (max-width: 1300px)': {
       paddingRight: '0',
     },
