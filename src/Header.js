@@ -1,5 +1,5 @@
 import React from 'react';
-import {FormattedMessage,injectIntl} from 'react-intl';
+import {FormattedMessage, injectIntl} from 'react-intl';
 import {createUseStyles} from 'react-jss';
 import flagEn from './images/flag-en.png';
 import flagFr from './images/flag-fr.png';
@@ -10,7 +10,7 @@ import theme from './theme';
 const useStyles = createUseStyles({
   hideOnSmall: {
     '@media (max-width: 600px)': {
-       display: 'none'
+      display: 'none'
     },
   },
   header: {
@@ -128,7 +128,7 @@ function Header({language, onChangeLanguage, intl}) {
       </div>
       {/*<div className={classes.empty}>&nbsp;</div>*/}
       <div className={classes.lang} onClick={handleLangClick} title={langTooltip}>
-        <img className={classes.flag} src={language === 'fr' ? flagEn : flagFr} alt="flag"/>
+        <img className={classes.flag} src={language === 'fr' ? flagFr : flagEn} alt="flag"/>
       </div>
     </header>
   )
