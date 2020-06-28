@@ -1,7 +1,7 @@
 export default {
   color:{
     bg:{
-      dark: '#1b5c00',
+      dark: '#238000',
       light: '#edffec'
     }
   }
