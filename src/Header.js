@@ -9,9 +9,9 @@ import theme from './theme';
 
 const useStyles = createUseStyles({
   hideOnSmall: {
-    // '@media (max-width: 600px)': {
-    //    display: 'none'
-    // },
+    '@media (max-width: 600px)': {
+       display: 'none'
+    },
   },
   header: {
     backgroundColor: theme.color.bg.dark,
