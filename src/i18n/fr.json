@@ -21,7 +21,7 @@
 
   "str.xp2.role" : "Ingénieur développement Front-End",
   "str.xp2.location" : "Intercall  (Montpellier)",
-  "str.xp2.text" : "Conception et début de l'implémentation du nouveau client web de la solution de téléconférence de l'entreprise en React et Material-ui, tout en réutilisant et adaptant les composants métiers existants.. Implémentation d’une application en QML/JavaScript, embarquée dans un téléphone de conférence en réutilisant et en optimisant fortement les composants métiers de l'application web existante afin de satisfaire aux capacités limitées de l'appareil.. Développement de nombreux composants graphiques et métiers de l'application de conférence web de l'entreprise basé sur le framework dojo",
+  "str.xp2.text" : "Conception et début de l'implémentation du nouveau client web de la solution de téléconférence de l'entreprise en React et Material-ui, tout en réutilisant et adaptant les composants métiers existants.. Implémentation d’une application en QML/JavaScript, embarquée dans un téléphone de conférence en réutilisant et en optimisant fortement les composants métiers de l'application web existante afin de satisfaire aux capacités limitées de l'appareil.. Développement de nombreux composants graphiques et métiers de l'application de conférence web de l'entreprise basé sur Dojo toolkit",
   "str.xp2.notes" :"Ces divers projets ont été réalisées au sein d'une équipe de 5 à 8 personnes en France et en coordination avec d'autres équipes aux US, au Canada, en Chine et en Inde, en utilisant la méthodologie agile Scrum.",
 
   "str.xp3.role" : "Développeur sénior / Leader technique",
