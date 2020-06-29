@@ -19,7 +19,10 @@ const useStyles = createUseStyles({
     justifyContent: 'space-between',
     alignItems: 'center',
     'flexWrap': 'wrap',
-    padding: '20px 20px'
+    padding: '20px 20px',
+    '@media (max-width: 600px)': {
+      padding: '15px 15px',
+    },
   },
   identity: {
     display: 'flex',
@@ -84,20 +87,28 @@ const useStyles = createUseStyles({
     //flex: '0 0 350px'
   },
   lang: {
+    backgroundColor: 'white',
+    width: '35px',
+    height: '35px',
+    display: 'flex',
+    borderRadius: '50%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    boxShadow: '2px 2px 3px black',
     cursor: 'pointer',
     position: 'absolute',
     top: '10px',
     right: '10px',
-    opacity: '0.9',
     '&:hover': {
-      opacity: '1',
+      boxShadow: '4px 4px 4px black',
     },
     '@media print': {
       display: 'none'
     }
   },
   flag: {
-    width: '30px',
+    flex: '0 0 auto',
+    width: '25px',
   }
 })
 
