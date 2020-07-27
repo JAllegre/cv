@@ -49,6 +49,12 @@ const useStyles = createUseStyles({
     fontSize: '1.2em',
     fontWeight: 'bold'
   },
+  phone:{
+    display: 'none',
+    '@media print': {
+      display: 'block'
+    }
+  },
   role: {
     // backgroundColor: theme.color.bg.light,
     color: 'white',
@@ -127,6 +133,7 @@ function Header({language, onChangeLanguage, intl}) {
         <div className={classes.locate}>
           <div className={classes.name}>Julien Allègre</div>
           <div>ju.allegre@gmail.com</div>
+          <div className={classes.phone}>07 85 31 03 14</div>
           <div>34920 Le Crès</div>
           <div><a className={classes.linkedInLink} href="https://www.linkedin.com/in/julien-all%C3%A8gre-7933bb139"><LinkedInIcon
             className={classes.linkedInIcon}/>LinkedIn</a></div>
