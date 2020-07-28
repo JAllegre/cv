@@ -56,13 +56,13 @@ function SectionEducation() {
       <SectionContent collapsed={collapsed}>
         <table className={classes.table}>
           <tbody>
-          <Line year='2006'>
+          <Line year='2007'>
             <FormattedMessage id="str.formations.cnam"/>
           </Line>
-          <Line year='2001'>
+          <Line year='2000'>
             <FormattedMessage id="str.formations.du"/>
           </Line>
-          <Line year='2000'>
+          <Line year='1999'>
             <FormattedMessage id="str.formations.dut"/>
           </Line>
           </tbody>
