@@ -6,14 +6,14 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-scripts": "^4.0.1",
     "serve": "^11.3.2"
   },
   "devDependencies": {
-    "react-intl": "^4.6.9",
-    "react-jss": "^10.3.0"
+    "react-intl": "^4.7.6",
+    "react-jss": "^10.5.1"
   },
   "scripts": {
     "start": "serve -s build",

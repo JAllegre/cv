@@ -109,6 +109,11 @@ function SectionXp({intl}) {
   const xp3Text = intl.formatMessage({id: 'str.xp3.text'});
   const xp3Notes = intl.formatMessage({id: 'str.xp3.notes'});
 
+  const xp4Role = intl.formatMessage({id: 'str.xp4.role'});
+  const xp4Location = intl.formatMessage({id: 'str.xp4.location'});
+  const xp4Text = intl.formatMessage({id: 'str.xp4.text'});
+  const xp4Notes = intl.formatMessage({id: 'str.xp4.notes'});
+
   return (
     <Section>
       <SectionTitle icon={<Icon/>} collapsed={collapsed} onCollapsed={handleCollapse}>
@@ -116,6 +121,7 @@ function SectionXp({intl}) {
       </SectionTitle>
       <SectionContent collapsed={collapsed}>
         <div className={classes.content}>
+          <Line period='2020 - 2021' role={xp4Role} location={xp4Location} text={xp4Text} notes={xp4Notes}/>
           <Line period='2019 - 2020' role={xp3Role} location={xp3Location} text={xp3Text} notes={xp3Notes}/>
           <Line period='2010 - 2019' role={xp2Role} location={xp2Location} text={xp2Text} notes={xp2Notes}/>
           <Line period='2000 - 2009' role={xp1Role} location={xp1Location} text={xp1Text}/>

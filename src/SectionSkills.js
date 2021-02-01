@@ -101,8 +101,9 @@ function SectionSkills({intl}) {
           <table className={classes.table}>
             <tbody>
             <SkillLine key="js" tech='JavaScript/ES6' rate={5}/>
-            <SkillLine key="ts" tech='TypeScript' rate={3}/>
+            <SkillLine key="ts" tech='TypeScript' rate={4}/>
             <SkillLine key="react" tech='React/Material-ui/Redux' rate={5}/>
+            <SkillLine key="met" tech='Meteor' rate={3}/>
             <SkillLine key="html" tech='HTML5/CSS3' rate={5}/>
             <SkillLine key="node" tech='Node.js/Express' rate={5}/>
             <SkillLine key="dojo" tech='Dojo toolkit' rate={4}/>
@@ -114,11 +115,13 @@ function SectionSkills({intl}) {
             <tbody>
             <SkillLine key="jest" tech='Jest/Enzyme' rate={3}/>
             <SkillLine key="pupet" tech='Puppeteer' rate={1}/>
-            <SkillLine key="git" tech='Git/GitHub' rate={4}/>
+            <SkillLine key="git" tech='Git' rate={4}/>
+            <SkillLine key="git" tech='GitHub/Actions' rate={4}/>
             <SkillLine key="scrum" tech='Agile/Scrum' rate={3}/>
             <SkillLine key="jen" tech='Jenkinsfile' rate={3}/>
-            <SkillLine key="dock" tech='Docker' rate={2}/>
+            <SkillLine key="dock" tech='Docker' rate={3}/>
             <SkillLine key="pcf" tech='Pivotal Cloud Foundry' rate={3}/>
+            <SkillLine key="terra" tech='Terraform' rate={1}/>
             </tbody>
           </table>
           <table className={classes.table}>
