@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
-import {FormattedMessage, injectIntl} from 'react-intl';
-import {createUseStyles} from 'react-jss';
-import {ReactComponent as Icon} from './images/handyman-black-18dp.svg';
+import React, { useState } from 'react';
+import { FormattedMessage, injectIntl } from 'react-intl';
+import { createUseStyles } from 'react-jss';
+import { ReactComponent as Icon } from './images/handyman-black-18dp.svg';
 import Section from './Section';
 import SectionContent from './SectionContent';
 import SectionTitle from './SectionTitle';
@@ -14,8 +14,8 @@ const useStyles = createUseStyles({
   line: {
     display: 'flex',
     '@media (max-width: 600px)': {
-      flexDirection: 'column',
-    },
+      flexDirection: 'column'
+    }
   },
   linePeriod: {
     flex: '0 0 100px',
@@ -37,7 +37,7 @@ const useStyles = createUseStyles({
       paddingInlineStart: '30px'
     },
     '@media (max-width: 600px)': {
-      padding: '0 0 0 0',
+      padding: '0 0 0 0'
     }
   },
   lineRole: {
@@ -59,79 +59,77 @@ const useStyles = createUseStyles({
     textAlign: 'left',
     margin: '0 0 30px 0'
   }
-})
+});
 
 function formatXpText(str = '') {
-  return {__html: '<ul><li> ' + str.replace(/\.\. /g, '</li><li>') + '</li></ul>'};
+  return {
+    __html: '<ul><li> ' + str.replace(/\.\. /g, '</li><li>') + '</li></ul>'
+  };
 }
 
-function Line({period, role, location, text, notes}) {
-  const classes = useStyles()
+function Line({ period, role, location, text, notes }) {
+  const classes = useStyles();
   return (
     <div className={classes.line}>
-      <div className={classes.linePeriod}>
-        {period}
-      </div>
+      <div className={classes.linePeriod}>{period}</div>
       <div className={classes.lineContent}>
-        <div className={classes.lineRole}>
-          {role}
-        </div>
-        <div className={classes.lineLocation}>
-          {location}
-        </div>
-        <div className={classes.text} dangerouslySetInnerHTML={formatXpText(text)}/>
+        <div className={classes.lineRole}>{role}</div>
+        <div className={classes.lineLocation}>{location}</div>
+        <div className={classes.text} dangerouslySetInnerHTML={formatXpText(text)} />
         {notes && <div className={classes.notes}> {notes}</div>}
       </div>
     </div>
-  )
+  );
 }
 
-function SectionXp({intl}) {
-  const classes = useStyles()
+function SectionXp({ intl }) {
+  const classes = useStyles();
   const [collapsed, setCollapsed] = useState(false);
 
   function handleCollapse(isCollapsed) {
     setCollapsed(isCollapsed);
   }
 
-  const xp1Role = intl.formatMessage({id: 'str.xp1.role'});
-  const xp1Location = intl.formatMessage({id: 'str.xp1.location'});
-  const xp1Text = intl.formatMessage({id: 'str.xp1.text'});
+  const xp1Role = intl.formatMessage({ id: 'str.xp1.role' });
+  const xp1Location = intl.formatMessage({ id: 'str.xp1.location' });
+  const xp1Text = intl.formatMessage({ id: 'str.xp1.text' });
 
-  const xp2Role = intl.formatMessage({id: 'str.xp2.role'});
-  const xp2Location = intl.formatMessage({id: 'str.xp2.location'});
-  const xp2Text = intl.formatMessage({id: 'str.xp2.text'});
-  const xp2Notes = intl.formatMessage({id: 'str.xp2.notes'});
+  const xp2Role = intl.formatMessage({ id: 'str.xp2.role' });
+  const xp2Location = intl.formatMessage({ id: 'str.xp2.location' });
+  const xp2Text = intl.formatMessage({ id: 'str.xp2.text' });
+  const xp2Notes = intl.formatMessage({ id: 'str.xp2.notes' });
 
+  const xp3Role = intl.formatMessage({ id: 'str.xp3.role' });
+  const xp3Location = intl.formatMessage({ id: 'str.xp3.location' });
+  const xp3Text = intl.formatMessage({ id: 'str.xp3.text' });
+  const xp3Notes = intl.formatMessage({ id: 'str.xp3.notes' });
 
-  const xp3Role = intl.formatMessage({id: 'str.xp3.role'});
-  const xp3Location = intl.formatMessage({id: 'str.xp3.location'});
-  const xp3Text = intl.formatMessage({id: 'str.xp3.text'});
-  const xp3Notes = intl.formatMessage({id: 'str.xp3.notes'});
+  const xp4Role = intl.formatMessage({ id: 'str.xp4.role' });
+  const xp4Location = intl.formatMessage({ id: 'str.xp4.location' });
+  const xp4Text = intl.formatMessage({ id: 'str.xp4.text' });
+  const xp4Notes = '';
 
-  const xp4Role = intl.formatMessage({id: 'str.xp4.role'});
-  const xp4Location = intl.formatMessage({id: 'str.xp4.location'});
-  const xp4Text = intl.formatMessage({id: 'str.xp4.text'});
-  const xp4Notes = intl.formatMessage({id: 'str.xp4.notes'});
+  const xp4Role = intl.formatMessage({ id: 'str.xp4.role' });
+  const xp4Location = intl.formatMessage({ id: 'str.xp4.location' });
+  const xp4Text = intl.formatMessage({ id: 'str.xp4.text' });
+  const xp4Notes = intl.formatMessage({ id: 'str.xp4.notes' });
 
   return (
     <Section>
-      <SectionTitle icon={<Icon/>} collapsed={collapsed} onCollapsed={handleCollapse}>
-        <FormattedMessage id="str.experiences.title"/>
+      <SectionTitle icon={<Icon />} collapsed={collapsed} onCollapsed={handleCollapse}>
+        <FormattedMessage id="str.experiences.title" />
       </SectionTitle>
       <SectionContent collapsed={collapsed}>
         <div className={classes.content}>
-          <Line period='2020 - 2021' role={xp4Role} location={xp4Location} text={xp4Text} notes={xp4Notes}/>
-          <Line period='2019 - 2020' role={xp3Role} location={xp3Location} text={xp3Text} notes={xp3Notes}/>
-          <Line period='2010 - 2019' role={xp2Role} location={xp2Location} text={xp2Text} notes={xp2Notes}/>
-          <Line period='2000 - 2009' role={xp1Role} location={xp1Location} text={xp1Text}/>
-          <div>
-          </div>
+          <Line period="2020 - 2021" role={xp4Role} location={xp4Location} text={xp4Text} notes={xp4Notes} />
+          <Line period="2019 - 2020" role={xp3Role} location={xp3Location} text={xp3Text} notes={xp3Notes} />
+          <Line period="2010 - 2019" role={xp2Role} location={xp2Location} text={xp2Text} notes={xp2Notes} />
+          <Line period="2000 - 2009" role={xp1Role} location={xp1Location} text={xp1Text} />
+          <div></div>
         </div>
       </SectionContent>
     </Section>
-  )
-
+  );
 }
 
 export default injectIntl(SectionXp);

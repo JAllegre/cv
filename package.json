@@ -1,6 +1,6 @@
 {
   "name": "cv-client",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -12,8 +12,8 @@
     "serve": "^11.3.2"
   },
   "devDependencies": {
-    "react-intl": "^4.7.6",
-    "react-jss": "^10.5.1"
+    "react-intl": "^5.24.3",
+    "react-jss": "^10.9.0"
   },
   "scripts": {
     "start": "serve -s build",
@@ -24,12 +24,21 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not op_mini all",
-    "ie > 10"
-  ]
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
