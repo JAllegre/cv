@@ -1,9 +1,9 @@
 import React from 'react';
-import {FormattedMessage, injectIntl} from 'react-intl';
-import {createUseStyles} from 'react-jss';
+import { FormattedMessage, injectIntl } from 'react-intl';
+import { createUseStyles } from 'react-jss';
 import flagEn from './images/flag-en.png';
 import flagFr from './images/flag-fr.png';
-import {ReactComponent as LinkedInIcon} from './images/linkedin.svg';
+import { ReactComponent as LinkedInIcon } from './images/linkedin.svg';
 import myFace from './images/maFace.jpg';
 import theme from './theme';
 
@@ -11,21 +11,21 @@ const useStyles = createUseStyles({
   hideOnSmall: {
     '@media (max-width: 600px)': {
       display: 'none'
-    },
+    }
   },
   header: {
     backgroundColor: theme.color.bg.dark,
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    'flexWrap': 'wrap',
+    flexWrap: 'wrap',
     padding: '20px 20px',
     '@media (max-width: 600px)': {
-      padding: '15px 15px',
-    },
+      padding: '15px 15px'
+    }
   },
   identity: {
-    display: 'flex',
+    display: 'flex'
     //flex: '0 0 350px'
   },
   myFace: {
@@ -49,14 +49,15 @@ const useStyles = createUseStyles({
     fontSize: '1.2em',
     fontWeight: 'bold'
   },
-  phone:{
+  phone: {
     display: 'none',
     '@media print': {
       display: 'block'
     }
   },
   role: {
-    // backgroundColor: theme.color.bg.light,
+    display: 'flex',
+    flexDirection: 'column',
     color: 'white',
     fontSize: '1.4em',
     flex: '1 1 auto',
@@ -66,11 +67,11 @@ const useStyles = createUseStyles({
     fontWeight: 'bold',
     textShadow: '3px 3px 2px #222222',
     '@media (max-width: 1300px)': {
-      paddingRight: '0',
+      paddingRight: '0'
     },
     '@media (max-width: 1000px)': {
       fontSize: '1.1em',
-      paddingTop: '20px',
+      paddingTop: '20px'
     }
   },
   linkedInIcon: {
@@ -106,7 +107,7 @@ const useStyles = createUseStyles({
     top: '10px',
     right: '10px',
     '&:hover': {
-      boxShadow: '4px 4px 4px black',
+      boxShadow: '4px 4px 4px black'
     },
     '@media print': {
       display: 'none'
@@ -114,42 +115,45 @@ const useStyles = createUseStyles({
   },
   flag: {
     flex: '0 0 auto',
-    width: '25px',
+    width: '25px'
   }
-})
+});
 
-function Header({language, onChangeLanguage, intl}) {
+function Header({ language, onChangeLanguage, intl }) {
   const classes = useStyles();
 
   function handleLangClick() {
     onChangeLanguage(language === 'fr' ? 'en' : 'fr');
   }
 
-  const langTooltip = intl.formatMessage({id: 'str.change.language.tooltip'});
+  const langTooltip = intl.formatMessage({ id: 'str.change.language.tooltip' });
   return (
     <header className={classes.header}>
       <div className={classes.identity}>
-        <img className={classes.myFace} src={myFace} alt="my face"/>
+        <img className={classes.myFace} src={myFace} alt="my face" />
         <div className={classes.locate}>
           <div className={classes.name}>Julien Allègre</div>
           <div>ju.allegre@gmail.com</div>
           <div className={classes.phone}>07 85 31 03 14</div>
           <div>34920 Le Crès</div>
-          <div><a className={classes.linkedInLink} href="https://www.linkedin.com/in/julien-all%C3%A8gre-7933bb139"><LinkedInIcon
-            className={classes.linkedInIcon}/>LinkedIn</a></div>
+          <div>
+            <a className={classes.linkedInLink} href="https://www.linkedin.com/in/julien-all%C3%A8gre-7933bb139">
+              <LinkedInIcon className={classes.linkedInIcon} />
+              LinkedIn
+            </a>
+          </div>
         </div>
       </div>
       <div className={classes.role}>
-        <span className={classes.hideOnSmall}>&#123;&#123; </span>
-        <FormattedMessage id="str.head.role"/>
-        <span className={classes.hideOnSmall}> &#125;&#125;</span>
+        <FormattedMessage id="str.head.role" />
+        <div>Full Stack JS</div>
       </div>
       {/*<div className={classes.empty}>&nbsp;</div>*/}
       <div className={classes.lang} onClick={handleLangClick} title={langTooltip}>
-        <img className={classes.flag} src={language === 'fr' ? flagFr : flagEn} alt="flag"/>
+        <img className={classes.flag} src={language === 'fr' ? flagFr : flagEn} alt="flag" />
       </div>
     </header>
-  )
+  );
 }
 
-export default injectIntl(Header)
+export default injectIntl(Header);
