@@ -3,13 +3,14 @@
   "version": "0.2.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-scripts": "^4.0.1",
-    "serve": "^11.3.2"
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.0",
+    "serve": "^13.0.2",
+    "web-vitals": "^2.1.4"
   },
   "devDependencies": {
     "react-intl": "^5.24.3",
@@ -18,7 +19,6 @@
   "scripts": {
     "start": "serve -s build",
     "dev": "react-scripts start",
-    "serve": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

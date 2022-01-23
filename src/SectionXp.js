@@ -107,11 +107,6 @@ function SectionXp({ intl }) {
   const xp4Role = intl.formatMessage({ id: 'str.xp4.role' });
   const xp4Location = intl.formatMessage({ id: 'str.xp4.location' });
   const xp4Text = intl.formatMessage({ id: 'str.xp4.text' });
-  const xp4Notes = '';
-
-  const xp4Role = intl.formatMessage({ id: 'str.xp4.role' });
-  const xp4Location = intl.formatMessage({ id: 'str.xp4.location' });
-  const xp4Text = intl.formatMessage({ id: 'str.xp4.text' });
   const xp4Notes = intl.formatMessage({ id: 'str.xp4.notes' });
 
   return (
