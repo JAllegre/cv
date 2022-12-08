@@ -43,7 +43,6 @@ const useStyles = createUseStyles({
     alignItems: 'flex-start',
     fontSize: '1.1em',
     color: 'white',
-    textShadow: '2px 2px 2px #2b003a'
   },
   name: {
     fontSize: '1.2em',
@@ -65,7 +64,7 @@ const useStyles = createUseStyles({
     textAlign: 'center',
     textTransform: 'uppercase',
     fontWeight: 'bold',
-    textShadow: '3px 3px 2px #222222',
+
     '@media (max-width: 1300px)': {
       paddingRight: '0'
     },

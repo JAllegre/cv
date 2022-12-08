@@ -25,10 +25,11 @@ const useStyles = createUseStyles({
     //   width: '200px'
     // },
   },
-  tr: {},
+  tr: {
+    borderRadius: '3px'
+  },
   td: {
     padding: '2px 10px',
-    backgroundColor: '#f6f6f6'
   },
   tdStars: {
     textAlign: 'center'
@@ -40,7 +41,8 @@ const useStyles = createUseStyles({
   rater: {
     display: 'flex',
     width: '100%',
-    height: '10px'
+    height: '10px',
+    borderRadius: '10px'
   },
   rate: {
     //borderRight: '1px solid grey',
@@ -48,7 +50,11 @@ const useStyles = createUseStyles({
     borderBottom: '1px solid grey',
     borderLeft: '1px solid grey',
     '&:last-child': {
-      borderRight: '1px solid grey'
+      borderRight: '1px solid grey',
+      borderRadius: '0 3px 3px 0'
+    },
+    '&:first-child': {
+      borderRadius: '3px 0 0 3px'
     },
     flex: '1 0 auto',
     height: '8px'

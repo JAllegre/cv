@@ -12,7 +12,6 @@ const useStyles = createUseStyles({
     justifyContent: 'flex-start',
     fontSize: '1.1em',
     padding: '4px 8px 4px 4px',
-    textShadow: '2px 2px 2px #2b003a',
     color: 'white',
     '& svg': {
       fill: 'white',
