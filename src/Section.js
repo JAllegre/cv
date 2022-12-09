@@ -1,5 +1,5 @@
 import React from 'react';
-import {createUseStyles} from 'react-jss';
+import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles({
   section: {
@@ -9,14 +9,11 @@ const useStyles = createUseStyles({
     maxWidth: '1200px',
     width: '100%'
   }
-})
+});
 
-function Section({children}) {
-  const classes = useStyles()
-  return (
-    <div className={classes.section}>
-      {children}
-    </div>)
+function Section({ children }) {
+  const classes = useStyles();
+  return <div className={classes.section}>{children}</div>;
 }
 
 export default Section;

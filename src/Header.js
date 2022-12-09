@@ -3,7 +3,7 @@ import { FormattedMessage, injectIntl } from 'react-intl';
 import { createUseStyles } from 'react-jss';
 import flagEn from './images/flag-en.png';
 import flagFr from './images/flag-fr.png';
-import { ReactComponent as LinkedInIcon } from './images/linkedin.svg';
+import linkedInIcon from './images/linkedin.png';
 import myFace from './images/maFace.jpg';
 import theme from './theme';
 
@@ -74,8 +74,8 @@ const useStyles = createUseStyles({
     }
   },
   linkedInIcon: {
-    backgroundColor: 'white',
-    borderRadius: '5px',
+    border: '1.5px solid white',
+    borderRadius: '4px',
     width: '25px',
     height: '25px',
     verticalAlign: 'bottom',
@@ -100,13 +100,13 @@ const useStyles = createUseStyles({
     borderRadius: '50%',
     justifyContent: 'center',
     alignItems: 'center',
-    boxShadow: '2px 2px 3px black',
+    boxShadow: '1px 1px 2px black',
     cursor: 'pointer',
     position: 'absolute',
     top: '10px',
     right: '10px',
     '&:hover': {
-      boxShadow: '4px 4px 4px black'
+      boxShadow: '2px 2px 2px black'
     },
     '@media print': {
       display: 'none'
@@ -137,8 +137,7 @@ function Header({ language, onChangeLanguage, intl }) {
           <div>34920 Le Crès</div>
           <div>
             <a className={classes.linkedInLink} href="https://www.linkedin.com/in/julien-all%C3%A8gre-7933bb139">
-              <LinkedInIcon className={classes.linkedInIcon} />
-              LinkedIn
+            <img className={classes.linkedInIcon} src={linkedInIcon} alt="LinkedIn icon"/>
             </a>
           </div>
         </div>

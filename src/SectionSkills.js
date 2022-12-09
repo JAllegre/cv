@@ -12,7 +12,8 @@ const useStyles = createUseStyles({
     display: 'flex',
     width: '100%',
     justifyContent: 'space-around',
-    flexWrap: 'wrap'
+    flexWrap: 'wrap',
+    alignItems: 'flex-start'
   },
 
   table: {
@@ -21,15 +22,9 @@ const useStyles = createUseStyles({
     minWidth: '300px',
     border: '0',
     backgroundColor: 'transparent'
-    // '@media (max-width: 600px)': {
-    //   width: '200px'
-    // },
-  },
-  tr: {
-    borderRadius: '3px'
   },
   td: {
-    padding: '2px 10px',
+    padding: '2px 10px'
   },
   tdStars: {
     textAlign: 'center'
@@ -41,21 +36,11 @@ const useStyles = createUseStyles({
   rater: {
     display: 'flex',
     width: '100%',
-    height: '10px',
-    borderRadius: '10px'
+    height: '10px'
   },
   rate: {
-    //borderRight: '1px solid grey',
-    borderTop: '1px solid grey',
-    borderBottom: '1px solid grey',
-    borderLeft: '1px solid grey',
-    '&:last-child': {
-      borderRight: '1px solid grey',
-      borderRadius: '0 3px 3px 0'
-    },
-    '&:first-child': {
-      borderRadius: '3px 0 0 3px'
-    },
+    border: '1px solid grey',
+
     flex: '1 0 auto',
     height: '8px'
   },
@@ -69,10 +54,11 @@ function SkillLine({ tech, rate }) {
   const classes = useStyles();
   const rates = [];
   for (let cpt = 0; cpt < 5; cpt++) {
-    rates.push(<div className={classes.rate + ' ' + (cpt < rate ? classes.rateOn : classes.rateOff)} />);
+    const key = `rate-${cpt}`;
+    rates.push(<div key={key} className={classes.rate + ' ' + (cpt < rate ? classes.rateOn : classes.rateOff)} />);
   }
   return (
-    <tr className={classes.tr}>
+    <tr>
       <td className={classes.td + ' ' + classes.tdTech}>{tech}</td>
       <td className={classes.td + ' ' + classes.tdStars}>
         <div className={classes.rater}>{rates}</div>
@@ -121,7 +107,7 @@ function SectionSkills({ intl }) {
               <SkillLine key="scrum" tech="Agile/Scrum" rate={3} />
               <SkillLine key="jen" tech="Jenkinsfile" rate={3} />
               <SkillLine key="dock" tech="Docker" rate={3} />
-              <SkillLine key="pcf" tech="Pivotal Cloud Foundry" rate={3} />
+              <SkillLine key="pcf" tech="Pivotal Cloud Foundry" rate={2} />
             </tbody>
           </table>
           <table className={classes.table}>

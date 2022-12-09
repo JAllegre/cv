@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FormattedMessage, injectIntl } from 'react-intl';
 import { createUseStyles } from 'react-jss';
 import { ReactComponent as Icon } from './images/handyman-black-18dp.svg';
+import PrintPageBreaker from './PrintPageBreaker';
 import Section from './Section';
 import SectionContent from './SectionContent';
 import SectionTitle from './SectionTitle';
@@ -90,25 +91,6 @@ function SectionXp({ intl }) {
     setCollapsed(isCollapsed);
   }
 
-  const xp1Role = intl.formatMessage({ id: 'str.xp1.role' });
-  const xp1Location = intl.formatMessage({ id: 'str.xp1.location' });
-  const xp1Text = intl.formatMessage({ id: 'str.xp1.text' });
-
-  const xp2Role = intl.formatMessage({ id: 'str.xp2.role' });
-  const xp2Location = intl.formatMessage({ id: 'str.xp2.location' });
-  const xp2Text = intl.formatMessage({ id: 'str.xp2.text' });
-  const xp2Notes = intl.formatMessage({ id: 'str.xp2.notes' });
-
-  const xp3Role = intl.formatMessage({ id: 'str.xp3.role' });
-  const xp3Location = intl.formatMessage({ id: 'str.xp3.location' });
-  const xp3Text = intl.formatMessage({ id: 'str.xp3.text' });
-  const xp3Notes = intl.formatMessage({ id: 'str.xp3.notes' });
-
-  const xp4Role = intl.formatMessage({ id: 'str.xp4.role' });
-  const xp4Location = intl.formatMessage({ id: 'str.xp4.location' });
-  const xp4Text = intl.formatMessage({ id: 'str.xp4.text' });
-  const xp4Notes = intl.formatMessage({ id: 'str.xp4.notes' });
-
   return (
     <Section>
       <SectionTitle icon={<Icon />} collapsed={collapsed} onCollapsed={handleCollapse}>
@@ -116,11 +98,53 @@ function SectionXp({ intl }) {
       </SectionTitle>
       <SectionContent collapsed={collapsed}>
         <div className={classes.content}>
-          <Line period="2020 - 2021" role={xp4Role} location={xp4Location} text={xp4Text} notes={xp4Notes} />
-          <Line period="2019 - 2020" role={xp3Role} location={xp3Location} text={xp3Text} notes={xp3Notes} />
-          <Line period="2010 - 2019" role={xp2Role} location={xp2Location} text={xp2Text} notes={xp2Notes} />
-          <Line period="2000 - 2009" role={xp1Role} location={xp1Location} text={xp1Text} />
-          <div></div>
+          <Line
+            key={'xp5'}
+            period="2021 - 2022"
+            role={intl.formatMessage({ id: `str.xp5.role` })}
+            location={intl.formatMessage({ id: `str.xp5.location` })}
+            text={intl.formatMessage({ id: `str.xp5.text` })}
+            notes={intl.formatMessage({ id: `str.xp5.notes` })}
+          />
+
+          <Line
+            key={'xp4'}
+            period="2020 - 2021"
+            role={intl.formatMessage({ id: `str.xp4.role` })}
+            location={intl.formatMessage({ id: `str.xp4.location` })}
+            text={intl.formatMessage({ id: `str.xp4.text` })}
+            notes={intl.formatMessage({ id: `str.xp4.notes` })}
+          />
+
+          <PrintPageBreaker />
+
+          <Line
+            key={'xp3'}
+            period="2019 - 2020"
+            role={intl.formatMessage({ id: `str.xp3.role` })}
+            location={intl.formatMessage({ id: `str.xp3.location` })}
+            text={intl.formatMessage({ id: `str.xp3.text` })}
+            notes={intl.formatMessage({ id: `str.xp3.notes` })}
+          />
+
+          <Line
+            key={'xp2'}
+            period="2010 - 2019"
+            role={intl.formatMessage({ id: `str.xp2.role` })}
+            location={intl.formatMessage({ id: `str.xp2.location` })}
+            text={intl.formatMessage({ id: `str.xp2.text` })}
+            notes={intl.formatMessage({ id: `str.xp2.notes` })}
+          />
+
+          <PrintPageBreaker />
+
+          <Line
+            key={'xp1'}
+            period="2000 - 2009"
+            role={intl.formatMessage({ id: `str.xp1.role` })}
+            location={intl.formatMessage({ id: `str.xp1.location` })}
+            text={intl.formatMessage({ id: `str.xp1.text` })}
+          />
         </div>
       </SectionContent>
     </Section>

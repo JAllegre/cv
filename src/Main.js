@@ -1,9 +1,10 @@
 import React from 'react';
-import {createUseStyles} from 'react-jss';
+import { createUseStyles } from 'react-jss';
 import SectionEducation from './SectionEducation';
 import SectionInterests from './SectionInterrest';
 import SectionSkills from './SectionSkills';
 import SectionXp from './SectionXp';
+import PrintPageBreaker from './PrintPageBreaker';
 
 const useStyles = createUseStyles({
   main: {
@@ -12,19 +13,19 @@ const useStyles = createUseStyles({
     flexDirection: 'column',
     alignItems: 'center'
   }
-})
+});
 
-
-function Main(){
+function Main() {
   const classes = useStyles();
   return (
     <main className={classes.main}>
-      <SectionSkills/>
-      <SectionXp/>
-      <SectionEducation/>
-      <SectionInterests/>
+      <SectionXp />
+      <PrintPageBreaker />
+      <SectionEducation />
+      <SectionSkills />
+      <SectionInterests />
     </main>
-  )
+  );
 }
 
-export default Main ;
+export default Main;
