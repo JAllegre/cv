@@ -37,6 +37,6 @@
   
   "str.xp5.role": "Lead Développeur / Développeur sénior",
   "str.xp5.location": "Viabeez (Saint-Malo)",
-  "str.xp5.text": "Lead de l'équipe de developpement de la société comprenant 3 developpeurs (junior et confirmé).. Amélioration et développement de fonctionalités de l'application web de gestion de rendez-vous entre employés et praticien..   Participation à la mise en place de la méthodologie kanban en utilisant les outils de Github et Jira.. Mise en place de pipelines CI/CD avec GitHub pour deploiement Heroku",
+  "str.xp5.text": "Lead de l'équipe de developpement comprenant 3 developpeurs (junior et confirmé).. Amélioration et développement de fonctionalités de l'application web de gestion de rendez-vous entre des employés et des praticiens..   Participation à la mise en place de la méthodologie kanban en utilisant les outils de Github et Jira.. Mise en place de pipelines CI/CD avec GitHub pour deploiement sur Heroku",
   "str.xp5.notes": "Ce travail s'est fait au sein d'une équipe technique de 6 personnes en télétravail (France)"
 }

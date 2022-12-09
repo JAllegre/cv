@@ -1,10 +1,10 @@
 const theme = {
   color: {
     bg: {
-      dark: "#238000",
-      light: "#edffec",
-    },
-  },
+      dark: '#597e49',
+      light: '#edffec'
+    }
+  }
 };
 
-export default theme ;
+export default theme;
