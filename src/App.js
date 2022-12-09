@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {IntlProvider} from 'react-intl';
+import React, { useState } from 'react';
+import { IntlProvider } from 'react-intl';
 import './App.css';
 import Header from './Header';
 import messagesEn from './i18n/en.json';
@@ -10,16 +10,15 @@ import Main from './Main';
 // import locale_de from 'react-intl/locale-data/fr';
 
 const messages = {
-  'fr': messagesFr,
-  'en': messagesEn
+  fr: messagesFr,
+  en: messagesEn
 };
 
 let initLanguage = localStorage.getItem('jacv');
 initLanguage = initLanguage || navigator.language.split(/[-_]/)[0];
 
 function App() {
-
-  const [language, setLanguage] = useState(initLanguage)
+  const [language, setLanguage] = useState(initLanguage);
 
   function changeLanguage(newLanguage) {
     localStorage.setItem('jacv', newLanguage);
@@ -28,11 +27,9 @@ function App() {
 
   return (
     <IntlProvider locale={language} key={language} messages={messages[language]}>
-
-
-      <div className="App">
-        <Header language={language} onChangeLanguage={changeLanguage}/>
-        <Main/>
+      <div className="app">
+        <Header language={language} onChangeLanguage={changeLanguage} />
+        <Main />
       </div>
     </IntlProvider>
   );

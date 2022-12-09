@@ -8,10 +8,15 @@ import PrintPageBreaker from './PrintPageBreaker';
 
 const useStyles = createUseStyles({
   main: {
-    padding: '10px',
+    padding: '10px 0',
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center'
+    alignItems: 'center',
+    width: '1200px',
+    '@media (max-width: 1200px)': {
+      padding: '10px 0',
+      width: '100%'
+    }
   }
 });
 

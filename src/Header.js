@@ -3,6 +3,7 @@ import { FormattedMessage, injectIntl } from 'react-intl';
 import { createUseStyles } from 'react-jss';
 import flagEn from './images/flag-en.png';
 import flagFr from './images/flag-fr.png';
+import globe from './images/globe.svg';
 import linkedInIcon from './images/linkedin.png';
 import myFace from './images/maFace.jpg';
 import theme from './theme';
@@ -15,13 +16,16 @@ const useStyles = createUseStyles({
   },
   header: {
     backgroundColor: theme.color.bg.dark,
+    position: 'relative',
+    width: '1200px',
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
     flexWrap: 'wrap',
     padding: '20px 20px',
-    '@media (max-width: 600px)': {
-      padding: '15px 15px'
+    '@media (max-width: 1200px)': {
+      padding: '10px 10px',
+      width: '100%'
     }
   },
   identity: {
@@ -42,7 +46,7 @@ const useStyles = createUseStyles({
     justifyContent: 'center',
     alignItems: 'flex-start',
     fontSize: '1.1em',
-    color: 'white',
+    color: 'white'
   },
   name: {
     fontSize: '1.2em',
@@ -60,15 +64,13 @@ const useStyles = createUseStyles({
     color: 'white',
     fontSize: '1.4em',
     flex: '1 1 auto',
-    paddingRight: '25%',
+    paddingRight: '10%',
     textAlign: 'center',
     textTransform: 'uppercase',
     fontWeight: 'bold',
 
-    '@media (max-width: 1300px)': {
-      paddingRight: '0'
-    },
-    '@media (max-width: 1000px)': {
+    '@media (max-width: 1200px)': {
+      paddingRight: '0',
       fontSize: '1.1em',
       paddingTop: '20px'
     }
@@ -93,28 +95,21 @@ const useStyles = createUseStyles({
     //flex: '0 0 350px'
   },
   lang: {
-    backgroundColor: 'white',
-    width: '35px',
-    height: '35px',
     display: 'flex',
-    borderRadius: '50%',
+    color: 'white',
     justifyContent: 'center',
     alignItems: 'center',
-    boxShadow: '1px 1px 2px black',
     cursor: 'pointer',
     position: 'absolute',
     top: '10px',
     right: '10px',
-    '&:hover': {
-      boxShadow: '2px 2px 2px black'
-    },
     '@media print': {
       display: 'none'
     }
   },
-  flag: {
-    flex: '0 0 auto',
-    width: '25px'
+  globe: {
+    width: '20px',
+    marginRight: '5px'
   }
 });
 
@@ -137,7 +132,7 @@ function Header({ language, onChangeLanguage, intl }) {
           <div>34920 Le Crès</div>
           <div>
             <a className={classes.linkedInLink} href="https://www.linkedin.com/in/julien-all%C3%A8gre-7933bb139">
-            <img className={classes.linkedInIcon} src={linkedInIcon} alt="LinkedIn icon"/>
+              <img className={classes.linkedInIcon} src={linkedInIcon} alt="LinkedIn icon" />
             </a>
           </div>
         </div>
@@ -146,9 +141,9 @@ function Header({ language, onChangeLanguage, intl }) {
         <FormattedMessage id="str.head.role" />
         <div>Full Stack JS</div>
       </div>
-      {/*<div className={classes.empty}>&nbsp;</div>*/}
       <div className={classes.lang} onClick={handleLangClick} title={langTooltip}>
-        <img className={classes.flag} src={language === 'fr' ? flagFr : flagEn} alt="flag" />
+        <img className={classes.globe} src={globe} alt="flag" />
+        <span>{language.toUpperCase()}</span>
       </div>
     </header>
   );
