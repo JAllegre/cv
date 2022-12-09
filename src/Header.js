@@ -1,8 +1,6 @@
 import React from 'react';
 import { FormattedMessage, injectIntl } from 'react-intl';
 import { createUseStyles } from 'react-jss';
-import flagEn from './images/flag-en.png';
-import flagFr from './images/flag-fr.png';
 import globe from './images/globe.svg';
 import linkedInIcon from './images/linkedin.png';
 import myFace from './images/maFace.jpg';
