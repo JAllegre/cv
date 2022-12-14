@@ -100,7 +100,7 @@ function SectionXp({ intl }) {
         <div className={classes.content}>
           <Line
             key={'xp5'}
-            period="2021 - 2022"
+            period="2022 - 2023"
             role={intl.formatMessage({ id: `str.xp5.role` })}
             location={intl.formatMessage({ id: `str.xp5.location` })}
             text={intl.formatMessage({ id: `str.xp5.text` })}
@@ -109,7 +109,7 @@ function SectionXp({ intl }) {
 
           <Line
             key={'xp4'}
-            period="2020 - 2021"
+            period="2020 - 2022"
             role={intl.formatMessage({ id: `str.xp4.role` })}
             location={intl.formatMessage({ id: `str.xp4.location` })}
             text={intl.formatMessage({ id: `str.xp4.text` })}

@@ -102,6 +102,7 @@ function SectionSkills({ intl }) {
             <tbody>
               <SkillLine key="jest" tech="Jest/Enzyme" rate={3} />
               <SkillLine key="pupet" tech="Puppeteer" rate={1} />
+              <SkillLine key="cypress" tech="Cypress" rate={1} />
               <SkillLine key="git" tech="Git" rate={4} />
               <SkillLine key="github" tech="GitHub" rate={4} />
               <SkillLine key="scrum" tech="Agile/Scrum" rate={3} />
