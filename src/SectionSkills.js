@@ -86,7 +86,7 @@ function SectionSkills({ intl }) {
         <div className={classes.content}>
           <table className={classes.table}>
             <tbody>
-              <SkillLine key="js" tech="JavaScript/ES6" rate={5} />
+              <SkillLine key="js" tech="JavaScript" rate={5} />
               <SkillLine key="ts" tech="TypeScript" rate={4} />
               <SkillLine key="react" tech="React/Redux" rate={5} />
               <SkillLine key="bootstrap" tech="MUI/Bootstrap" rate={4} />

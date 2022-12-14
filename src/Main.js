@@ -28,7 +28,7 @@ function Main() {
       <PrintPageBreaker />
       <SectionEducation />
       <SectionSkills />
-      <SectionInterests />
+      {/* <SectionInterests /> */}
     </main>
   );
 }

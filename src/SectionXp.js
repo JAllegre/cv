@@ -50,7 +50,7 @@ const useStyles = createUseStyles({
     color: '#878787'
   },
   text: {
-    marginBottom: '10px',
+    marginBottom: '0',
     textAlign: 'left',
     '& li': {
       paddingBottom: '10px'
@@ -58,7 +58,8 @@ const useStyles = createUseStyles({
   },
   notes: {
     textAlign: 'left',
-    margin: '0 0 30px 0'
+    margin: '0 0 30px 0',
+    color: '#878787'
   }
 });
 
@@ -77,7 +78,7 @@ function Line({ period, role, location, text, notes }) {
         <div className={classes.lineRole}>{role}</div>
         <div className={classes.lineLocation}>{location}</div>
         <div className={classes.text} dangerouslySetInnerHTML={formatXpText(text)} />
-        {notes && <div className={classes.notes}> {notes}</div>}
+        <div className={classes.notes}>{notes}</div>
       </div>
     </div>
   );
@@ -144,6 +145,7 @@ function SectionXp({ intl }) {
             role={intl.formatMessage({ id: `str.xp1.role` })}
             location={intl.formatMessage({ id: `str.xp1.location` })}
             text={intl.formatMessage({ id: `str.xp1.text` })}
+            notes={intl.formatMessage({ id: `str.xp1.notes` })}
           />
         </div>
       </SectionContent>
