@@ -1,7 +1,7 @@
 const theme = {
   color: {
     bg: {
-      dark: '#597e49',
+      dark: '#00576a',
       light: '#edffec'
     }
   }

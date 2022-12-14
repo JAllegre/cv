@@ -32,11 +32,11 @@
 
   "str.xp4.role": "Lead Developer / Senior Developer",
   "str.xp4.location": "Videomenthe - Montpellier (France)",
-  "str.xp4.text": "Feature improvement and development of the web application managing video workflow, based on Meteor framework (Node, React, Blaze).. Implementation of the SCRUM agility with GitHub tools.. Implementation ot the CI/CD pipelines with GitHub workflows and DockerHub to be deployen to Azure cloud",
+  "str.xp4.text": "Feature improvement and development of the web application managing video workflow, based on Meteor framework (Typescript, React, Bootstrap, Node, MongoDB).. Implementation of the SCRUM agility with GitHub tools.. Implementation ot the CI/CD pipelines with GitHub workflows and DockerHub to be deployen to Azure cloud",
   "str.xp4.notes": "This work has been made within a technical team of 6 people located in France",
 
   "str.xp5.role": "Lead Developer / Senior Developer",
-  "str.xp5.location": "Viabeez - Saint-Malo (France, Full Remote) ",
-  "str.xp5.text": "Lead of the development team of 3 developers (junior et confirmed).. Improvement and development of features for the web application, managing appointment between employees and practitioner.. Participation in the implementation of the kanban methodology using Github and Jira tools.. Implementation of CI/CD pipelines with GitHub for Heroku deployment",
+  "str.xp5.location": "Viabeez - Saint-Malo (France/Remote) ",
+  "str.xp5.text": "Lead of the development team of 3 developers (junior et confirmed).. Improvement and development of features for the web application, managing appointment between employees and practitioners (React/Redux/Node/Express/MongoDB).. Participation in the implementation of the kanban methodology using Github and Jira tools.. Implementation of CI/CD pipelines with GitHub for Heroku deployment",
   "str.xp5.notes": "This work has been made within a technical team of 6 people located in France (Full Remote)"
 }

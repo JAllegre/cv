@@ -93,7 +93,6 @@ function SectionSkills({ intl }) {
               <SkillLine key="html" tech="HTML5/CSS3" rate={5} />
               <SkillLine key="node" tech="Node.js/Express" rate={5} />
               <SkillLine key="meteor" tech="Meteor.js" rate={3} />
-              <SkillLine key="dojo" tech="Dojo toolkit" rate={4} />
               <SkillLine key="java" tech="Java" rate={2} />
               <SkillLine key="c" tech="C++" rate={2} />
             </tbody>
@@ -101,19 +100,18 @@ function SectionSkills({ intl }) {
           <table className={classes.table}>
             <tbody>
               <SkillLine key="jest" tech="Jest/Enzyme" rate={3} />
-              <SkillLine key="pupet" tech="Puppeteer" rate={1} />
-              <SkillLine key="cypress" tech="Cypress" rate={1} />
+              <SkillLine key="pupet" tech="Puppeteer" rate={2} />
+              <SkillLine key="cypress" tech="Cypress" rate={2} />
               <SkillLine key="git" tech="Git" rate={4} />
               <SkillLine key="github" tech="GitHub" rate={4} />
               <SkillLine key="scrum" tech="Agile/Scrum" rate={3} />
               <SkillLine key="jen" tech="Jenkinsfile" rate={3} />
               <SkillLine key="dock" tech="Docker" rate={3} />
-              <SkillLine key="pcf" tech="Pivotal Cloud Foundry" rate={2} />
             </tbody>
           </table>
           <table className={classes.table}>
             <tbody>
-              <SkillLine key="ten" tech={englishTechnical} rate={5} />
+              <SkillLine key="ten" tech={englishTechnical} rate={4} />
               <SkillLine key="cen" tech={englishFluent} rate={3} />
             </tbody>
           </table>
