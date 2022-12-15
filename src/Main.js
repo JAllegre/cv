@@ -1,7 +1,7 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 import SectionEducation from './SectionEducation';
-import SectionInterests from './SectionInterrest';
+// import SectionInterests from './SectionInterrest';
 import SectionSkills from './SectionSkills';
 import SectionXp from './SectionXp';
 import PrintPageBreaker from './PrintPageBreaker';
