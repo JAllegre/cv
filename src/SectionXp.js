@@ -14,7 +14,7 @@ const useStyles = createUseStyles({
   },
   line: {
     display: 'flex',
-    '@media (max-width: 600px)': {
+    '@media (max-width: 400px)': {
       flexDirection: 'column'
     }
   },
@@ -24,7 +24,7 @@ const useStyles = createUseStyles({
     whiteSpace: 'nowrap',
     color: '#878787',
     fontWeight: 'bold',
-    '@media (max-width: 600px)': {
+    '@media (max-width: 400px)': {
       flex: '0 0 auto',
       marginBottom: '10px'
     }
@@ -116,9 +116,7 @@ function SectionXp({ intl }) {
             text={intl.formatMessage({ id: `str.xp4.text` })}
             notes={intl.formatMessage({ id: `str.xp4.notes` })}
           />
-
           <PrintPageBreaker />
-
           <Line
             key={'xp3'}
             period="2019 - 2020"
@@ -136,8 +134,6 @@ function SectionXp({ intl }) {
             text={intl.formatMessage({ id: `str.xp2.text` })}
             notes={intl.formatMessage({ id: `str.xp2.notes` })}
           />
-
-          <PrintPageBreaker />
 
           <Line
             key={'xp1'}

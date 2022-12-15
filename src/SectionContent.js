@@ -4,8 +4,10 @@ import { createUseStyles } from 'react-jss';
 const useStyles = createUseStyles({
   sectionContent: {
     display: 'flex',
-    padding: '20px'
-    // backgroundColor: '#FDFDFD'
+    padding: '15px',
+    '@media (max-width: 800px)': {
+      padding: '10px 5px'
+    }
   },
   none: {
     display: 'none'

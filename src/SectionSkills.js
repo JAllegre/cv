@@ -18,8 +18,8 @@ const useStyles = createUseStyles({
 
   table: {
     width: '30%',
-    padding: '10px',
-    minWidth: '300px',
+    padding: '10px 0',
+    minWidth: '200px',
     border: '0',
     backgroundColor: 'transparent'
   },
@@ -27,6 +27,7 @@ const useStyles = createUseStyles({
     padding: '2px 10px'
   },
   tdStars: {
+    minWidth: '100px',
     textAlign: 'center'
   },
   tdTech: {

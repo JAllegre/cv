@@ -24,10 +24,11 @@ function Main() {
   const classes = useStyles();
   return (
     <main className={classes.main}>
+      <SectionSkills />
       <SectionXp />
       <PrintPageBreaker />
       <SectionEducation />
-      <SectionSkills />
+
       {/* <SectionInterests /> */}
     </main>
   );
