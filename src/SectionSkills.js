@@ -112,6 +112,14 @@ function SectionSkills({ intl }) {
           </table>
           <table className={classes.table}>
             <tbody>
+              <SkillLine key="rest" tech="RestAPI" rate={4} />
+              <SkillLine key="graph" tech="GraphQL" rate={3} />
+              <tr>
+                <td>
+                  <br />
+                  <br />
+                </td>
+              </tr>
               <SkillLine key="ten" tech={englishTechnical} rate={4} />
               <SkillLine key="cen" tech={englishFluent} rate={3} />
             </tbody>

@@ -28,15 +28,15 @@
   "str.xp3.role": "Senior developer / Technical Leader",
   "str.xp3.location": "Intrado/West - Montpellier (France)",
   "str.xp3.text": "Design and development of the front-end and back-end of a new web portal, with the purpose of exposing to customers their usage and consumption data from the company's databases.. This portal mainly includes user authentication, user administration (creation, hierarchy, accounts, etc.), display of data using Tableau, a notification system and raw data export as a file.. Implement a CI/CD pipeline with GitHub, Jenkinsfile, Artifactory and PCF for automatic deployment of all portal applications (mono-repo).. Implementation of unit tests in Jest/Enzyme and SonarQube configuration in order to validate the code before deployment. Start of the integration of Puppeteer for the execution of end-to-end tests.. This project was carried out within a team of 12 people including 3 in France using agile methods (SAFE, Scrum)",
-  "str.xp3.notes": "ES6 | React | MUI | Redux | Node | Express | MongoDB",
+  "str.xp3.notes": "ES6 | React | MUI | Redux | Node | Express | Postgres | RestAPI",
 
   "str.xp4.role": "Lead Developer / Senior Developer",
   "str.xp4.location": "Videomenthe - Montpellier (France)",
   "str.xp4.text": "Feature improvement and development of the web application managing video workflow, based on Meteor framework.. Implementation of the SCRUM agility with GitHub tools.. Implementation ot the CI/CD pipelines with GitHub workflows and DockerHub to be deployen to Azure cloud.",
-  "str.xp4.notes": "Typescript | React | Bootstrap | Redux | Meteor | Node | MongoDB",
+  "str.xp4.notes": "Typescript | React | Bootstrap | Redux | Meteor | Node | MongoDB | GraphQL",
 
   "str.xp5.role": "Lead Developer / Senior Developer",
   "str.xp5.location": "Viabeez - Saint-Malo (France/Remote) ",
   "str.xp5.text": "Lead of the development team of 3 developers (junior et confirmed).. Improvement and development of features for the web application, managing appointment between employees and practitioners.. Participation in the implementation of the kanban methodology using Github and Jira tools.. Implementation of CI/CD pipelines with GitHub for Heroku deployment",
-  "str.xp5.notes": "Typescript | React | Redux-Toolkit | Grommet | Node | Express | MongoDB"
+  "str.xp5.notes": "Typescript | React | Redux-Toolkit | Grommet | Node | Express | MongoDB | RestAPI"
 }
