@@ -18,8 +18,8 @@
     "react-jss": "^10.9.0"
   },
   "scripts": {
-    "start": "node server.js",
-    "///start": "serve -s build",
+    "///start": "node server.js",
+    "start": "serve -s build",
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
