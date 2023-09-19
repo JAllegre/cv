@@ -92,10 +92,9 @@ function SectionSkills({ intl }) {
               <SkillLine key="react" tech="React/Redux" rate={5} />
               <SkillLine key="bootstrap" tech="MUI/Bootstrap" rate={4} />
               <SkillLine key="html" tech="HTML5/CSS3" rate={5} />
-              <SkillLine key="node" tech="Node.js/Express" rate={5} />
+              <SkillLine key="node" tech="Node.js/Express" rate={4} />
               <SkillLine key="meteor" tech="Meteor.js" rate={3} />
-              <SkillLine key="java" tech="Java" rate={2} />
-              <SkillLine key="c" tech="C++" rate={2} />
+              <SkillLine key="java" tech="Java/C++" rate={2} />
             </tbody>
           </table>
           <table className={classes.table}>
@@ -104,7 +103,7 @@ function SectionSkills({ intl }) {
               <SkillLine key="pupet" tech="Puppeteer" rate={2} />
               <SkillLine key="cypress" tech="Cypress" rate={2} />
               <SkillLine key="git" tech="Git" rate={4} />
-              <SkillLine key="github" tech="GitHub" rate={4} />
+              <SkillLine key="github" tech="GitHub" rate={5} />
               <SkillLine key="scrum" tech="Agile/Scrum" rate={3} />
               <SkillLine key="jen" tech="Jenkinsfile" rate={3} />
               <SkillLine key="dock" tech="Docker" rate={3} />

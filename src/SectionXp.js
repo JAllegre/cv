@@ -53,7 +53,10 @@ const useStyles = createUseStyles({
     marginBottom: '0',
     textAlign: 'left',
     '& li': {
-      paddingBottom: '10px'
+      paddingBottom: '9px'
+    },
+    '& ul': {
+      marginTop: '4px'
     }
   },
   notes: {
@@ -75,8 +78,12 @@ function Line({ period, role, location, text, notes }) {
     <div className={classes.line}>
       <div className={classes.linePeriod}>{period}</div>
       <div className={classes.lineContent}>
-        <div className={classes.lineRole}>{role}</div>
-        <div className={classes.lineLocation}>{location}</div>
+        <div style={{ display: 'flex' }}>
+          <div className={classes.lineRole}>{role}</div>
+          <div className={classes.lineLocation}>
+            {'\u00A0 \u00A0'} @{location}
+          </div>
+        </div>
         <div className={classes.text} dangerouslySetInnerHTML={formatXpText(text)} />
         <div className={classes.notes}>{notes}</div>
       </div>
@@ -134,7 +141,7 @@ function SectionXp({ intl }) {
             text={intl.formatMessage({ id: `str.xp2.text` })}
             notes={intl.formatMessage({ id: `str.xp2.notes` })}
           />
-
+          {/* <PrintPageBreaker /> */}
           <Line
             key={'xp1'}
             period="2000 - 2009"

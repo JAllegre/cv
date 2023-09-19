@@ -16,7 +16,7 @@
   "str.interests.list": "Cuisine, Randonnée",
 
   "str.xp1.role": "Développeur Back-end/Front-end",
-  "str.xp1.location": "Genesys Conferencing (Montpellier)",
+  "str.xp1.location": "Genesys Conferencing - Montpellier",
   "str.xp1.text": "Conception et implémentation d'un module apache en C++ permettant de connecter une application web à des serveurs internes de conférence audio.. Reprise de la gestion et de la maintenance d’un serveur de data conférence en VC++, afin d'améliorer ses performances et sa stabilité.. Implémentation de composants du premier client sur navigateur web du service de conférence de l’entreprise, remplaçant l’ancienne application native.. Pour des besoins internes, mais aussi en tant que projet du mémoire d’ingénieur CNAM, conception et développement d’une application VC++ permettant de piloter des scripts(VOS) afin de tester des fonctionnalités audios",
   "str.xp1.notes": "C | C++ | VC++ | Java | OracleDB",
 
@@ -37,6 +37,6 @@
 
   "str.xp5.role": "Lead Développeur / Développeur senior",
   "str.xp5.location": "Viabeez - Saint-Malo (Télétravail)",
-  "str.xp5.text": "Gestion technique d'une équipe de 3 développeurs (junior et confirmé).. Amélioration et développement de fonctionnalités de l'application web de gestion de rendez-vous entre employés et praticiens.. Participation à la mise en place de la méthodologie kanban en utilisant les outils de Github et Jira.. Mise en place de pipelines CI/CD avec GitHub Workflows pour déploiement sur Heroku",
+  "str.xp5.text": "Gestion technique d'une équipe de 3 développeurs (junior et confirmé).. Amélioration et développement de fonctionnalités de l'application web de gestion de rendez-vous entre employés et praticiens.. Participation à la mise en place de la méthodologie kanban en utilisant les outils de Github et Jira.. Mise en place de pipelines CI/CD avec GitHub Workflows pour déploiement sur Heroku et Netlify",
   "str.xp5.notes": "Typescript | React | Redux-Toolkit | Grommet | Node | Express | MongoDB | RestAPI"
 }

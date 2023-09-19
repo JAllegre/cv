@@ -14,6 +14,7 @@ const useStyles = createUseStyles({
   },
   header: {
     backgroundColor: theme.color.bg.dark,
+    borderRadius: '0 0 4px 4px ',
     position: 'relative',
     width: '1200px',
     display: 'flex',
@@ -47,8 +48,8 @@ const useStyles = createUseStyles({
     color: 'white'
   },
   name: {
-    fontSize: '1.2em',
-    fontWeight: 'bold'
+    fontSize: '1.3em',
+    fontWeight: '500'
   },
   phone: {
     display: 'none',
@@ -60,12 +61,12 @@ const useStyles = createUseStyles({
     display: 'flex',
     flexDirection: 'column',
     color: 'white',
-    fontSize: '1.4em',
+    fontSize: '1.5em',
     flex: '1 1 auto',
     paddingRight: '10%',
     textAlign: 'center',
     textTransform: 'uppercase',
-    fontWeight: 'bold',
+    fontWeight: '400',
 
     '@media (max-width: 1200px)': {
       paddingRight: '0',

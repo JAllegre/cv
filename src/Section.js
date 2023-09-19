@@ -3,8 +3,10 @@ import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles({
   section: {
+    overflow: 'hidden',
+    borderRadius: '4px',
     border: '1px solid grey',
-    boxShadow: '2px 2px 2px #cecece',
+    boxShadow: '2px 2px 3px 1px #cecece',
     margin: '0 0 15px 0',
     maxWidth: '1200px',
     width: '100%'

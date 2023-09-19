@@ -4,7 +4,6 @@ import SectionEducation from './SectionEducation';
 // import SectionInterests from './SectionInterrest';
 import SectionSkills from './SectionSkills';
 import SectionXp from './SectionXp';
-import PrintPageBreaker from './PrintPageBreaker';
 
 const useStyles = createUseStyles({
   main: {
@@ -26,7 +25,6 @@ function Main() {
     <main className={classes.main}>
       <SectionSkills />
       <SectionXp />
-      <PrintPageBreaker />
       <SectionEducation />
 
       {/* <SectionInterests /> */}

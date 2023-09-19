@@ -3,11 +3,9 @@ import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles({
   sectionContent: {
+    backgroundColor: '#fafafa',
     display: 'flex',
-    padding: '15px',
-    '@media (max-width: 800px)': {
-      padding: '10px 5px'
-    }
+    padding: '15px'
   },
   none: {
     display: 'none'
