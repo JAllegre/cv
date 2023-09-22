@@ -22,7 +22,7 @@
   "str.xp1.notes": "C | C++ | VC++ | Java | OracleDB",
 
   "str.xp2.role": "Développeur Front-End",
-  "str.xp2.period": "2009 - 2017",
+  "str.xp2.period": "2009 - 2016",
   "str.xp2.location": "Intercall - Montpellier",
   "str.xp2.text": "Conception et début de l'implémentation du nouveau client web de la solution de téléconférence de l'entreprise en React et Material-ui, tout en réutilisant et adaptant les composants métiers existants.. Implémentation d’une application en QML/JavaScript, embarquée dans un téléphone de conférence en réutilisant et en optimisant fortement les composants métiers de l'application web existante afin de satisfaire aux capacités limitées de l'appareil.. Développement de nombreux composants graphiques et métiers de l'application de conférence web de l'entreprise basé sur Dojo toolkit.. Ces divers projets ont été réalisées au sein d'une équipe de 5 à 8 personnes en France et en coordination avec d'autres équipes aux US, au Canada, en Chine et en Inde, en utilisant la méthodologie agile Scrum",
   "str.xp2.notes": "JavaScript | Dojo | JQuery | HTML/CSS | QML",
@@ -34,7 +34,7 @@
   "str.xp3.notes": "ES6 | React | MUI | Redux | Node | Express | Postgres | RestAPI",
 
   "str.xp4.role": "Lead Développeur / Développeur senior",
-  "str.xp4.period": "2019 - 2021",
+  "str.xp4.period": "2020 - 2022",
   "str.xp4.location": "Videomenthe - Montpellier",
   "str.xp4.text": "Gestion technique d'une équipe de 4 développeurs (junior et confirmé).. Amélioration et développement de fonctionnalités de l'application web de gestion de workflow vidéo, basé sur le framework Meteor.. Mise en place de la méthodologie Scrum en utilisant les outils de Github.. Mise en place des pipelines CI/CD avec GitHub et DockerHub pour déploiement sur cloud Azure",
   "str.xp4.notes": "Typescript | React | Bootstrap | Redux | Meteor | Node | MongoDB | GraphQL",
@@ -48,6 +48,6 @@
   "str.xp6.role": "Lead Développeur / Développeur senior",
   "str.xp6.period": "Fev 2023 - Oct 2023",
   "str.xp6.location": "MyLi - Marseille (Télétravail)",
-  "str.xp6.text": "Gestion technique d'une équipe front-end de 2 développeurs.. Mise en place et développement de l'application web de la nouvelle plateforme de MyLi (gestion de l'influence sur internet).. Improvement and development of functionalities for two additional \"legacy\" web applications.",
+  "str.xp6.text": "Gestion technique d'une équipe front-end de 2 développeurs.. Mise en place et développement de l'application web de la nouvelle plateforme de MyLi (gestion de l'influence sur internet).. Amélioration et développement de fonctionnalités sur 2 autres applications web \"legacy\"",
   "str.xp6.notes": "Typescript | React | Redux-Toolkit | MUI | RestAPI"
 }
