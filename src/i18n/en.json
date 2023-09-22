@@ -48,6 +48,6 @@
   "str.xp6.role": "Lead Developer / Senior Developer",
   "str.xp6.period": "Fev 2023 - Oct 2023",
   "str.xp6.location": "MyLi - Marseille,France (Télétravail)",
-  "str.xp6.text": "Lead of the development team of 3 developers (junior et confirmed).. Improvement and development of features for the web application, managing appointment between employees and practitioners.. Participation in the implementation of the kanban methodology using Github and Jira tools.. Implementation of CI/CD pipelines with GitHub for Heroku and Netlify deployment",
+  "str.xp6.text": "Technical management of a front-end team consisting of 2 developers.. Implementation and development of the web application for MyLi's new platform (internet influence management).. Enhancement and development of functionalities for other \"legacy\" web applications.",
   "str.xp6.notes": "Typescript | React | Redux-Toolkit | MUI | RestAPI"
 }

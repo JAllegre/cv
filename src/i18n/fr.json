@@ -48,6 +48,6 @@
   "str.xp6.role": "Lead Développeur / Développeur senior",
   "str.xp6.period": "Fev 2023 - Oct 2023",
   "str.xp6.location": "MyLi - Marseille (Télétravail)",
-  "str.xp6.text": "Gestion technique d'une équipe front-end de 2 développeurs.. Mise en place et développement de l'application web de la nouvelle plateforme de MyLi (gestion de l'influence sur internet)..  Amélioration et développement de fonctionnalités sur applications d'autres applications web \"legacy\"",
+  "str.xp6.text": "Gestion technique d'une équipe front-end de 2 développeurs.. Mise en place et développement de l'application web de la nouvelle plateforme de MyLi (gestion de l'influence sur internet).. Improvement and development of functionalities for two additional \"legacy\" web applications.",
   "str.xp6.notes": "Typescript | React | Redux-Toolkit | MUI | RestAPI"
 }

@@ -32,11 +32,11 @@ function SectionXp({ intl }) {
         <div className={classes.content}>
           <LineXp key="xp6" id="xp6" />
           <LineXp key="xp5" id="xp5" />
-          <LineXp key="xp4" id="xp4" />
           <PrintPageBreaker />
+          <LineXp key="xp4" id="xp4" />
           <LineXp key="xp3" id="xp3" />
           <LineXp key="xp2" id="xp2" />
-          {/* <PrintPageBreaker /> */}
+          <PrintPageBreaker />
           <LineXp key="xp1" id="xp1" />
         </div>
       </SectionContent>
