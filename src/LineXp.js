@@ -11,7 +11,8 @@ const useStyles = createUseStyles({
   },
   linePeriod: {
     flex: '0 0 160px',
-    textAlign: 'left',
+    display: 'flex',
+    justifyContent: 'flex-start',
     whiteSpace: 'nowrap',
     color: '#878787',
     fontWeight: 'bold',
