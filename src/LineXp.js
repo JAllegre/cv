@@ -10,7 +10,7 @@ const useStyles = createUseStyles({
     }
   },
   linePeriod: {
-    flex: '0 0 160px',
+    flex: '0 0 130px',
     display: 'flex',
     justifyContent: 'flex-start',
     whiteSpace: 'nowrap',
@@ -64,12 +64,18 @@ function formatXpText(str = '') {
   };
 }
 
+function formatPeriodText(str = '') {
+  return {
+    __html: str.length > 12 ? str.replace(/ - /g, ' -<br/>&nbsp;&nbsp;') : str
+  };
+}
+
 function LineXp({ id, intl }) {
   const classes = useStyles();
 
   return (
     <div className={classes.line}>
-      <div className={classes.linePeriod}>{intl.formatMessage({ id: `str.${id}.period` })}</div>
+      <div className={classes.linePeriod} dangerouslySetInnerHTML={formatPeriodText(intl.formatMessage({ id: `str.${id}.period` }))}></div>
       <div className={classes.lineContent}>
         <div style={{ display: 'flex' }}>
           <div className={classes.lineRole}>{intl.formatMessage({ id: `str.${id}.role` })}</div>

@@ -18,13 +18,13 @@ const useStyles = createUseStyles({
 
   table: {
     width: '30%',
-    padding: '10px 0',
+    padding: '8px 0',
     minWidth: '200px',
     border: '0',
     backgroundColor: 'transparent'
   },
   td: {
-    padding: '2px 10px'
+    padding: '2px'
   },
   tdStars: {
     minWidth: '100px',
@@ -87,7 +87,8 @@ function SectionSkills({ intl }) {
         <div className={classes.content}>
           <table className={classes.table}>
             <tbody>
-              <SkillLine key="js" tech="JavaScript/TypeScript" rate={5} />
+              <SkillLine key="js" tech="JavaScript" rate={5} />
+              <SkillLine key="ts" tech="TypeScript" rate={4} />
               <SkillLine key="react" tech="React/Redux" rate={5} />
               <SkillLine key="vue" tech="Vue" rate={2} />
               <SkillLine key="bootstrap" tech="Bootstrap/MUI" rate={4} />

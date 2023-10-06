@@ -13,7 +13,7 @@ const useStyles = createUseStyles({
     alignItems: 'center',
     width: '1200px',
     '@media (max-width: 1200px)': {
-      padding: '10px 0',
+      padding: '10px',
       width: '100%'
     }
   }
@@ -26,8 +26,6 @@ function Main() {
       <SectionSkills />
       <SectionXp />
       <SectionEducation />
-
-      {/* <SectionInterests /> */}
     </main>
   );
 }
