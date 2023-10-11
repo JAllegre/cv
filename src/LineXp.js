@@ -1,6 +1,7 @@
 import React from 'react';
 import { injectIntl } from 'react-intl';
 import { createUseStyles } from 'react-jss';
+import theme from './theme';
 
 const useStyles = createUseStyles({
   line: {
@@ -52,9 +53,10 @@ const useStyles = createUseStyles({
     }
   },
   lineNotes: {
+    opacity: '0.9',
     textAlign: 'left',
     margin: '0 0 30px 0',
-    color: '#878787'
+    color: theme.color.bg.dark
   }
 });
 

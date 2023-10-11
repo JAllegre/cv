@@ -6,15 +6,17 @@ import theme from './theme';
 
 const useStyles = createUseStyles({
   sectionTitle: {
-    backgroundColor: theme.color.bg.dark,
+    // backgroundColor: theme.color.bg.dark,
     display: 'flex',
     alignItems: 'flex-start',
     justifyContent: 'flex-start',
     fontSize: '1.1em',
-    padding: '4px 8px 4px 4px',
-    color: 'white',
+    textTransform: 'uppercase',
+    padding: '4px 8px 4px 0',
+    color: theme.color.bg.dark,
+    borderBottom: `1.5px solid ${theme.color.bg.dark}`,
     '& svg': {
-      fill: 'white',
+      fill: theme.color.bg.dark,
       width: '20px',
       height: '20px'
     }
@@ -30,7 +32,7 @@ const useStyles = createUseStyles({
   text: {
     flex: '1 1 auto',
     textAlign: 'left',
-    paddingLeft: '10px',
+    paddingLeft: '6px',
     fontWeight: 'bold'
   }
 });
@@ -41,7 +43,7 @@ function SectionTitle({ children, icon, collapsed, onCollapsed }) {
     <div className={classes.sectionTitle}>
       {icon}
       <div className={classes.text}>{children}</div>
-      {collapsed ? <IconMaximize className={classes.iconAction} onClick={() => onCollapsed(false)} /> : <IconMinimize className={classes.iconAction} onClick={() => onCollapsed(true)} />}
+      {/* {collapsed ? <IconMaximize className={classes.iconAction} onClick={() => onCollapsed(false)} /> : <IconMinimize className={classes.iconAction} onClick={() => onCollapsed(true)} />} */}
     </div>
   );
 }

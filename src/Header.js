@@ -14,7 +14,7 @@ const useStyles = createUseStyles({
   },
   header: {
     backgroundColor: theme.color.bg.dark,
-    borderRadius: '0 0 4px 4px ',
+    // borderRadius: '0 0 4px 4px ',
     position: 'relative',
     width: '1200px',
     display: 'flex',
@@ -22,6 +22,7 @@ const useStyles = createUseStyles({
     alignItems: 'center',
     flexWrap: 'wrap',
     padding: '20px 20px',
+    marginBottom: '10px',
     '@media (max-width: 1200px)': {
       padding: '10px 10px',
       width: '100%'
@@ -58,8 +59,6 @@ const useStyles = createUseStyles({
     }
   },
   role: {
-    display: 'flex',
-    flexDirection: 'column',
     color: 'white',
     fontSize: '1.5em',
     flex: '1 1 auto',
@@ -138,7 +137,7 @@ function Header({ language, onChangeLanguage, intl }) {
       </div>
       <div className={classes.role}>
         <FormattedMessage id="str.head.role" />
-        <div>Full Stack JS</div>
+        <span> Fullstack JS/TS</span>
       </div>
       <div className={classes.lang} onClick={handleLangClick} title={langTooltip}>
         <img className={classes.globe} src={globe} alt="flag" />

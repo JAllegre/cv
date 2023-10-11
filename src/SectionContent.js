@@ -3,7 +3,6 @@ import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles({
   sectionContent: {
-    backgroundColor: '#fafafa',
     display: 'flex',
     padding: '15px'
   },
