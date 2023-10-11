@@ -88,8 +88,8 @@ function SectionSkills({ intl }) {
     setCollapsed(isCollapsed);
   }
 
-  const englishTechnical = intl.formatMessage({ id: 'str.skills.english.technical' });
-  const englishFluent = intl.formatMessage({ id: 'str.skills.english.fluent' });
+  // const englishTechnical = intl.formatMessage({ id: 'str.skills.english.technical' });
+  // const englishFluent = intl.formatMessage({ id: 'str.skills.english.fluent' });
   const english = intl.formatMessage({ id: 'str.skills.english' });
   return (
     <div className={classes.root}>

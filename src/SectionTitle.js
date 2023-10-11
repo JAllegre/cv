@@ -1,7 +1,7 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
-import { ReactComponent as IconMinimize } from './images/minimize-24px.svg';
-import { ReactComponent as IconMaximize } from './images/web_asset-24px.svg';
+// import { ReactComponent as IconMinimize } from './images/minimize-24px.svg';
+// import { ReactComponent as IconMaximize } from './images/web_asset-24px.svg';
 import theme from './theme';
 
 const useStyles = createUseStyles({
