@@ -12,16 +12,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', Arial, 'Helvetica Neue', sans-serif;
+  font-size: 14px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
-
-@page {
-  margin: 0.1cm;
 }
 
 /*Force use of color/image in print mode*/

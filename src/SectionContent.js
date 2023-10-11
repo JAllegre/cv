@@ -4,7 +4,7 @@ import { createUseStyles } from 'react-jss';
 const useStyles = createUseStyles({
   sectionContent: {
     display: 'flex',
-    padding: '15px'
+    padding: '15px 0'
   },
   none: {
     display: 'none'

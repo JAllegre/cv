@@ -8,6 +8,19 @@ import SectionTitle from './SectionTitle';
 import theme from './theme';
 
 const useStyles = createUseStyles({
+  root: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
+    width: '100%',
+    gap: '30px',
+    '& > div': {
+      width: 'auto',
+      flex: '1 1 auto',
+      margin: 0
+    }
+  },
+
   content: {
     display: 'flex',
     width: '100%',
@@ -19,7 +32,7 @@ const useStyles = createUseStyles({
   table: {
     width: '30%',
     padding: '8px 0',
-    minWidth: '200px',
+    minWidth: '150px',
     border: '0',
     backgroundColor: 'transparent'
   },
@@ -27,12 +40,11 @@ const useStyles = createUseStyles({
     padding: '2px'
   },
   tdStars: {
-    minWidth: '100px',
     textAlign: 'center'
   },
   tdTech: {
     textAlign: 'left',
-    width: '60%'
+    width: '50%'
   },
   rater: {
     display: 'flex',
@@ -78,53 +90,71 @@ function SectionSkills({ intl }) {
 
   const englishTechnical = intl.formatMessage({ id: 'str.skills.english.technical' });
   const englishFluent = intl.formatMessage({ id: 'str.skills.english.fluent' });
+  const english = intl.formatMessage({ id: 'str.skills.english' });
   return (
-    <Section>
-      <SectionTitle icon={<Icon />} collapsed={collapsed} onCollapsed={handleCollapse}>
-        <FormattedMessage id="str.skills.title" />
-      </SectionTitle>
-      <SectionContent collapsed={collapsed}>
-        <div className={classes.content}>
-          <table className={classes.table}>
-            <tbody>
-              <SkillLine key="js" tech="JavaScript" rate={5} />
-              <SkillLine key="ts" tech="TypeScript" rate={4} />
-              <SkillLine key="react" tech="React/Redux" rate={5} />
-              <SkillLine key="vue" tech="Vue" rate={2} />
-              <SkillLine key="bootstrap" tech="Bootstrap/MUI" rate={4} />
-              <SkillLine key="node" tech="Node.js/Express" rate={4} />
-              <SkillLine key="next" tech="NextJS" rate={2} />
-              <SkillLine key="meteor" tech="Meteor.js" rate={3} />
-            </tbody>
-          </table>
-          <table className={classes.table}>
-            <tbody>
-              <SkillLine key="jest" tech="Jest/Enzyme" rate={3} />
-              <SkillLine key="cypress" tech="Cypress/Puppeteer" rate={2} />
-              <SkillLine key="git" tech="Git" rate={4} />
-              <SkillLine key="github" tech="GitHub" rate={4} />
-              <SkillLine key="scrum" tech="Agile/Scrum" rate={3} />
-              <SkillLine key="jen" tech="Jenkinsfile" rate={2} />
-              <SkillLine key="dock" tech="Docker" rate={3} />
-            </tbody>
-          </table>
-          <table className={classes.table}>
-            <tbody>
-              <SkillLine key="rest" tech="RestAPI" rate={4} />
-              <SkillLine key="graph" tech="GraphQL" rate={3} />
-              <tr>
-                <td>
-                  <br />
-                  <br />
-                </td>
-              </tr>
-              <SkillLine key="ten" tech={englishTechnical} rate={4} />
-              <SkillLine key="cen" tech={englishFluent} rate={3} />
-            </tbody>
-          </table>
-        </div>
-      </SectionContent>
-    </Section>
+    <div className={classes.root}>
+      <Section>
+        <SectionTitle icon={<Icon />} collapsed={collapsed} onCollapsed={handleCollapse}>
+          <FormattedMessage id="str.skills.title.main" />
+        </SectionTitle>
+        <SectionContent collapsed={collapsed}>
+          <div className={classes.content}>
+            <table className={classes.table}>
+              <tbody>
+                <SkillLine key="js" tech="JavaScript" rate={5} />
+                <SkillLine key="ts" tech="TypeScript" rate={4} />
+                <SkillLine key="html" tech="HTML/CSS" rate={5} />
+                <SkillLine key="react" tech="React" rate={5} />
+                <SkillLine key="redux" tech="Redux/RTK" rate={4} />
+                <SkillLine key="mui" tech="MUI" rate={5} />
+              </tbody>
+            </table>
+            <table className={classes.table}>
+              <tbody>
+                <SkillLine key="node" tech="Node/Express" rate={4} />
+                <SkillLine key="github" tech="Git" rate={4} />
+                <SkillLine key="git" tech="GitHub" rate={4} />
+                <SkillLine key="scrum" tech="Agile/Scrum" rate={3} />
+              </tbody>
+            </table>
+          </div>
+        </SectionContent>
+      </Section>
+
+      <Section>
+        <SectionTitle icon={<Icon />} collapsed={collapsed} onCollapsed={handleCollapse}>
+          <FormattedMessage id="str.skills.title.other" />
+        </SectionTitle>
+        <SectionContent collapsed={collapsed}>
+          <div className={classes.content}>
+            <table className={classes.table}>
+              <tbody>
+                <SkillLine key="tailwind" tech="TailwindCSS" rate={3} />
+                <SkillLine key="vue" tech="Vue" rate={2} />
+                <SkillLine key="bootstrap" tech="Bootstrap" rate={2} />
+                <SkillLine key="next" tech="NextJS" rate={2} />
+                <SkillLine key="jest" tech="Jest/Enzyme" rate={3} />
+                <SkillLine key="cypress" tech="Cypress" rate={2} />
+                <SkillLine key="dock" tech="Docker" rate={3} />
+              </tbody>
+            </table>
+            <table className={classes.table}>
+              <tbody>
+                <SkillLine key="rest" tech="RestAPI" rate={4} />
+                <SkillLine key="graph" tech="GraphQL" rate={3} />
+                <tr>
+                  <td>
+                    <br />
+                    <br />
+                  </td>
+                </tr>
+                <SkillLine key="english" tech={english} rate={4} />
+              </tbody>
+            </table>
+          </div>
+        </SectionContent>
+      </Section>
+    </div>
   );
 }
 

@@ -49,7 +49,8 @@ const useStyles = createUseStyles({
       paddingBottom: '9px'
     },
     '& ul': {
-      marginTop: '4px'
+      marginTop: '4px',
+      marginBottom: '4px'
     }
   },
   lineNotes: {
