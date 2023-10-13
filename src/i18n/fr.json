@@ -1,6 +1,6 @@
 {
   "str.change.language.tooltip": "Basculer en anglais",
-  "str.head.role": "Lead Développeur",
+  "str.head.role": "Lead developer",
   "str.skills.title": "Compétences",
   "str.skills.title.main": "Compétences actives",
   "str.skills.title.other": "Autres compétences",
@@ -38,19 +38,19 @@
 
   "str.xp4.location": "Videomenthe - Montpellier",
   "str.xp4.period": "2020 - 2022",
-  "str.xp4.role": "Lead Développeur / Développeur senior",
-  "str.xp4.text": "Gestion technique d'une équipe de 4 développeurs fullstack JS.. Amélioration et développement de fonctionnalités de l'application web de gestion de workflow vidéo, basé sur le framework Meteor.. Développement d'un player multimedia web avec gestion de flux audio/vidéo avec application de transfomation audio (AudioContext multi pistes/canaux)..  Mise en place de la méthodologie Scrum en utilisant les outils de Github.. Mise en place des pipelines CI/CD avec GitHub et DockerHub pour déploiement sur cloud Azure",
+  "str.xp4.role": "Lead Developer full stack JS",
+  "str.xp4.text": "Gestion technique d'une équipe de 4 développeurs full stack JS.. Amélioration et développement de fonctionnalités de l'application web de gestion de workflow vidéo, basé sur le framework Meteor.. Développement d'un player multimedia web avec gestion de flux audio/vidéo avec application de transfomation audio (AudioContext multi pistes/canaux)..  Mise en place de la méthodologie Scrum en utilisant les outils de Github.. Mise en place des pipelines CI/CD avec GitHub et DockerHub pour déploiement sur cloud Azure",
   "str.xp4.notes": "Typescript | React | Bootstrap | Redux | Meteor | Node | MongoDB | GraphQL",
 
   "str.xp5.location": "Viabeez - Saint-Malo (Télétravail)",
   "str.xp5.period": "Juin 2022 - Jan 2023",
-  "str.xp5.role": "Lead Développeur / Développeur senior",
-  "str.xp5.text": "Gestion technique d'une équipe de 3 développeurs fullstack JS.. Amélioration et développement de fonctionnalités de l'application web de gestion de rendez-vous entre des employés et des praticiens.. Participation à la mise en place de la méthodologie kanban en utilisant les outils de Github et Jira.. Mise en place de pipelines CI/CD avec GitHub Workflows pour déploiement sur Heroku et Netlify",
+  "str.xp5.role": "Lead Developer full stack JS",
+  "str.xp5.text": "Gestion technique d'une équipe de 3 développeurs full stack JS.. Amélioration et développement de fonctionnalités de l'application web de gestion de rendez-vous entre des employés et des praticiens.. Participation à la mise en place de la méthodologie kanban en utilisant les outils de Github et Jira.. Mise en place de pipelines CI/CD avec GitHub Workflows pour déploiement sur Heroku et Netlify",
   "str.xp5.notes": "Typescript | React | Redux-Toolkit | Grommet | Node | Express | MongoDB | RestAPI",
 
   "str.xp6.location": "MyLi - Marseille (Télétravail)",
   "str.xp6.period": "Fév 2023 - Oct 2023",
-  "str.xp6.role": "Lead Développeur / Développeur senior",
-  "str.xp6.text": "Gestion technique d'une équipe front-end de 2 développeurs.. Mise en place et développement de l'application web de la nouvelle plateforme de MyLi (gestion de l'influence sur internet).. Amélioration et développement de fonctionnalités sur 2 autres applications web \"legacy\"",
-  "str.xp6.notes": "Typescript | React | Redux-Toolkit | MUI | RestAPI"
+  "str.xp6.role": "Lead developer frontend",
+  "str.xp6.text": "Gestion technique d'une équipe front-end de 2 développeurs, en  méthodologie agile (Kanban).. Mise en place et développement de l'application web de la nouvelle plateforme de MyLi (gestion de l'influence sur internet).. Amélioration et développement de fonctionnalités sur 2 autres applications web \"legacy\"",
+  "str.xp6.notes": "Typescript | ViteJS | React | Redux-Toolkit | MUI | RestAPI"
 }
