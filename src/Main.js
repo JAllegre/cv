@@ -23,8 +23,8 @@ function Main() {
   const classes = useStyles();
   return (
     <main className={classes.main}>
-      <SectionSkills />
       <SectionXp />
+      <SectionSkills />
       <SectionEducation />
     </main>
   );

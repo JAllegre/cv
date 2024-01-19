@@ -26,7 +26,7 @@ const useStyles = createUseStyles({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'flex-start',
-    padding: '0 0 0 20px',
+    padding: '0 0 0 0',
     '& ul': {
       paddingInlineStart: '30px'
     },
@@ -34,8 +34,11 @@ const useStyles = createUseStyles({
       padding: '0 0 0 0'
     }
   },
+  lineRoleLoc: {
+    marginBottom: '4px',
+    fontSize: '16px'
+  },
   lineRole: {
-    marginBottom: '10px',
     fontWeight: 'bold'
   },
   lineLocation: {
@@ -80,7 +83,7 @@ function LineXp({ id, intl }) {
     <div className={classes.line}>
       <div className={classes.linePeriod} dangerouslySetInnerHTML={formatPeriodText(intl.formatMessage({ id: `str.${id}.period` }))}></div>
       <div className={classes.lineContent}>
-        <div style={{ display: 'flex' }}>
+        <div className={classes.lineRoleLoc} style={{ display: 'flex' }}>
           <div className={classes.lineRole}>{intl.formatMessage({ id: `str.${id}.role` })}</div>
           <div className={classes.lineLocation}>
             {'\u00A0 \u00A0'} @{intl.formatMessage({ id: `str.${id}.location` })}

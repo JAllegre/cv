@@ -21,7 +21,7 @@ const useStyles = createUseStyles({
     justifyContent: 'space-between',
     alignItems: 'center',
     flexWrap: 'wrap',
-    padding: '20px 20px',
+    padding: '15px 15px',
     marginBottom: '10px',
     '@media (max-width: 1200px)': {
       padding: '10px 10px',
@@ -35,7 +35,7 @@ const useStyles = createUseStyles({
   myFace: {
     // margin: '20px 20px 20px 40px',
     borderRadius: '50%',
-    width: '120px',
+    width: '100px',
     boxShadow: '0 0 10px #555555'
   },
 
@@ -110,6 +110,8 @@ const useStyles = createUseStyles({
     marginRight: '5px'
   }
 });
+const now = new Date();
+const myAge = Math.floor((now.getFullYear() * 12 + now.getMonth() + 1 - (1976 * 12 + 5)) / 12);
 
 function Header({ language, onChangeLanguage, intl }) {
   const classes = useStyles();
@@ -119,12 +121,14 @@ function Header({ language, onChangeLanguage, intl }) {
   }
 
   const langTooltip = intl.formatMessage({ id: 'str.change.language.tooltip' });
+
   return (
     <header className={classes.header}>
       <div className={classes.identity}>
         <img className={classes.myFace} src={myFace} alt="my face" />
         <div className={classes.locate}>
           <div className={classes.name}>Julien Allègre</div>
+          <div>{myAge} ans</div>
           <div>ju.allegre@gmail.com</div>
           <div className={classes.phone}>07 85 31 03 14</div>
           <div>34920 Le Crès</div>
