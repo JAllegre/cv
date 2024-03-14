@@ -36,6 +36,7 @@ const useStyles = createUseStyles({
     // margin: '20px 20px 20px 40px',
     borderRadius: '50%',
     width: '100px',
+    height: '100px',
     boxShadow: '0 0 10px #555555'
   },
 
